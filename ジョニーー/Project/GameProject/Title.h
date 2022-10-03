@@ -6,9 +6,7 @@
 class Title : public Base {
 	//画像オブジェクト
 	CImage m_img;
-	CImage m_text;
-	CImage m_pushz;
-	CImage m_str;
+	
 	//文字表示オブジェクト
 	CFont m_title_text;
 public:

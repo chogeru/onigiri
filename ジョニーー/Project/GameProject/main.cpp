@@ -69,7 +69,7 @@ void Init(void)
 ;
 	ADD_RESOURCE("Map", CImage::CreateImage("Image/Map.png"));
 	ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
-
+	ADD_RESOURCE("titlegamenn", CImage::CreateImage("Image/titlegamenn.png"));
 	//-----------------------------------------------------
 //‰Šú‰»‚Ì–½—ß‚ğ‘‚­
 //ƒQ[ƒ€‹N“®‚Éˆê“x‚¾‚¯ŒÄ‚Î‚ê‚é
@@ -83,8 +83,8 @@ void Init(void)
 	//“G‚Ì‚Ì¶¬
 	Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
-
-
+	
+	Base::Add(new Title);
 
 
 
