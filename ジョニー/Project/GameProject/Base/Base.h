@@ -12,6 +12,7 @@ enum {
 	eType_Scene,
 	eType_trap,
 	eType_trapbullet,
+	eType_Map,
 };
 
 //d—Í‰Á‘¬“x
