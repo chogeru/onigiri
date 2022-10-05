@@ -11,6 +11,8 @@
 #include"Map.h"
 #include"Title.h"
 #include"AnimData.h"
+#include"trapbullet.h"
+#include"trap.h"
 //--------------------------------------------
 //グローバル変数領域
 //--------------------------------------------
@@ -80,9 +82,12 @@ void Init(void)
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Enemy.png"));
 	//プレイヤーの生成
 	//Base::Add(new Player(CVector2D(200, 500), false));
+	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
+
 	//敵のの生成
 	Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
+	Base::Add(new trap(CVector2D(800, 500)));
 	
 	Base::Add(new Title);
 

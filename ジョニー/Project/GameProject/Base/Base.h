@@ -10,6 +10,8 @@ enum {
 	eType_Effect,
 	eType_UI,
 	eType_Scene,
+	eType_trap,
+	eType_trapbullet,
 };
 
 //d—Í‰Á‘¬“x

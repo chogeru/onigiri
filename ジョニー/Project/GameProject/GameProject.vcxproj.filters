@@ -32,6 +32,12 @@
     <ClCompile Include="Map.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="trap.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="trapbullet.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -70,6 +76,12 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Map.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="trap.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="trapbullet.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
