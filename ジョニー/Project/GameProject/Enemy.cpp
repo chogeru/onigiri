@@ -1,6 +1,6 @@
 #include "Enemy.h"
 #include"AnimData.h"
-#include"Field.h"
+//#include"Field.h"
 //#include"Slash.h"
 #include"Effect.h"
 #include"Map.h"

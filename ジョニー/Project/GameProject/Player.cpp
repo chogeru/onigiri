@@ -1,6 +1,6 @@
 #include "Player.h"
 #include "AnimData.h"
-#include"Field.h"
+//#include"Field.h"
 #include "Map.h"
 #include"Effect.h"
 //#include"Goal.h"

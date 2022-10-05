@@ -7,7 +7,7 @@
 #include "Base/Base.h"
 #include "Player.h"
 #include"Enemy.h"
-#include"Field.h"
+//#include"Field.h"
 #include"Game.h"
 #include"Goal.h"
 #include"Map.h"
