@@ -3,6 +3,7 @@
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
 #include"Field.h"
+#include"Base/Base.h"
 #include "Base/Base.h"
 #include "Player.h"
 #include"Enemy.h"
@@ -70,7 +71,7 @@ void Init(void)
 	//-----------------------------------------------------
 
 ;   ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png", player_anim_data, 32, 32));
-	ADD_RESOURCE("Map", CImage::CreateImage("Image/Map.png"));
+	//ADD_RESOURCE("Map", CImage::CreateImage("Image/Map.png"));
 	ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
 	ADD_RESOURCE("titlegamenn", CImage::CreateImage("Image/titlegamenn.png"));
 	//-----------------------------------------------------
