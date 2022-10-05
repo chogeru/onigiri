@@ -3,12 +3,9 @@
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
 #include"Field.h"
-<<<<<<< HEAD
 #include"Base/Base.h"
-=======
 #include "Base/Base.h"
 #include "Player.h"
->>>>>>> 7165d27cfde84bf1f72667f83ac29be6f0315b8d
 #include"Enemy.h"
 #include"Field.h"
 #include"Game.h"
