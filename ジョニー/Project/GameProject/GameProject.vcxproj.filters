@@ -23,7 +23,13 @@
     <ClCompile Include="Goal.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\2D\-\ジョニー＆デップ\Project\GameProject\Map.cpp">
+    <ClCompile Include="Player.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
       <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
@@ -57,7 +63,13 @@
     <ClInclude Include="Goal.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\2D\-\ジョニー＆デップ\Project\GameProject\Map.h">
+    <ClInclude Include="Player.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

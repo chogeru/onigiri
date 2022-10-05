@@ -11,24 +11,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\2D\-\ジョニー＆デップ\Project\GameProject\Map.cpp" />
     <ClCompile Include="AnimData.cpp" />
     <ClCompile Include="Base\Base.cpp" />
+    <ClCompile Include="Effect.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Goal.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Title.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\2D\-\ジョニー＆デップ\Project\GameProject\Map.h" />
     <ClInclude Include="AnimData.h" />
     <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Effect.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Goal.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Title.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
