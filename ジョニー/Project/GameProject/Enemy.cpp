@@ -141,6 +141,17 @@ void Enemy::Draw()
 void Enemy::Collision(Base* b)
 {
 	switch (b->m_type) {
+	case eType_Player:
+		if (Base::CollisionCircle(this, b))
+		{
+			b->SetKill();
+			SetKill();
+		}
+
+		
+	
+
+
 	/*case eType_Player_Attack:
 		if (Slash* s = dynamic_cast<Slash*>(b)) {
 			if (m_damage_no != s->GetAttackNo() && Base::CollisionRect(this, s)) {
