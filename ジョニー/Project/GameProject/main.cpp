@@ -75,6 +75,8 @@ void Init(void)
 	ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
 	ADD_RESOURCE("titlegamenn", CImage::CreateImage("Image/titlegamenn.png"));
 	ADD_RESOURCE("titlegamenn2gou", CImage::CreateImage("Image/titlegamenn2gou.png"));
+	ADD_RESOURCE("titlegamenntype2", CImage::CreateImage("Image/titlegamenntype2.png"));
+	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
 	//-----------------------------------------------------
 //‰Šú‰»‚Ì–½—ß‚ğ‘‚­
 //ƒQ[ƒ€‹N“®‚Éˆê“x‚¾‚¯ŒÄ‚Î‚ê‚é
