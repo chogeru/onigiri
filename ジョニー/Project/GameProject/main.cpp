@@ -74,6 +74,7 @@ void Init(void)
 	//ADD_RESOURCE("Map", CImage::CreateImage("Image/Map.png"));
 	ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
 	ADD_RESOURCE("titlegamenn", CImage::CreateImage("Image/titlegamenn.png"));
+	ADD_RESOURCE("titlegamenn2gou", CImage::CreateImage("Image/titlegamenn2gou.png"));
 	//-----------------------------------------------------
 //‰Šú‰»‚Ì–½—ß‚ğ‘‚­
 //ƒQ[ƒ€‹N“®‚Éˆê“x‚¾‚¯ŒÄ‚Î‚ê‚é
