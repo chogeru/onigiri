@@ -21,7 +21,7 @@
 //--------------------------------------------
 //a
 //(´・ω・`)(´・ω・`)(´・ω・`)
-
+//ちんこぉ！！！
 
 
 void MainLoop(void) {
@@ -94,7 +94,7 @@ void Init(void)
 	//敵のの生成
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
-	Base::Add(new trap(CVector2D(800, 500)));
+	Base::Add(new trap(CVector2D(250, 500), false));
 	Base::Add(new Map());
 	Base::Add(new Title);
 	Base::Add(new Player(CVector2D(250, 500), false));

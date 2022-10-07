@@ -9,6 +9,7 @@ enum {
 	eType_Goal,
 	eType_Effect,
 	eType_UI,
+	eType_UI2,
 	eType_Scene,
 	eType_trap,
 	eType_trapbullet,
