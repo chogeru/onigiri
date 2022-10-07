@@ -16,21 +16,21 @@ void UI::Draw()
 	Base* enemy = Base::FindObject(eType_Enemy);
 
 	//敵がいなければ
-	/*if (enemy == nullptr) {
-		//ゲームクリアの表示
-		m_img.SetRect(0, 64, 0 + 160, 64 + 32);
-		m_img.SetSize(160, 32);
-		m_img.SetPos(100, 200);
-		m_img.Draw();
-	}*/
+	//if (enemy == nullptr) {
+	//	//ゲームクリアの表示
+	//	m_img.SetRect(0, 64, 0 + 160, 64 + 32);
+	//	m_img.SetSize(160, 32);
+	//	m_img.SetPos(100, 200);
+	//	m_img.Draw();
+	//}
 	Base* player = Base::FindObject(eType_Player);
 
 	//敵がいなければ
 	if (player == nullptr) {
 		//ゲームクリアの表示
-		m_img.SetRect(0, 64, 0 + 160, 64 + 32);
+		m_img.SetRect(0, 64, 160,  32);
 		m_img.SetSize(160, 32);
-		m_img.SetPos(100, 200);
+		m_img.SetPos(200, 200);
 		m_img.Draw();
 	}
 
