@@ -28,7 +28,7 @@ void UI::Draw()
 	//敵がいなければ
 	if (player == nullptr) {
 		//ゲームクリアの表示
-		m_img.SetRect(0, 64, 160,  32);
+		m_img.SetRect(0, 96, 160,  128);
 		m_img.SetSize(160, 32);
 		m_img.SetPos(200, 200);
 		m_img.Draw();
