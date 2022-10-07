@@ -3,7 +3,7 @@
 //#include "Player.h"
 #include "Enemy.h"
 #include "Title.h"
-
+#include"trap.h"
 Game::Game() :Base(eType_Scene)
 {
 	//Base::Add(new Field());
@@ -11,6 +11,8 @@ Game::Game() :Base(eType_Scene)
 	//Base::Add(new Enemy(CVector2D(1280 + 256 * 1, 540), true));
 	//Base::Add(new Enemy(CVector2D(1280 + 256 * 2, 540), true));
 	Base::Add(new Enemy(CVector2D(280 + 256 * 3, 440), true));
+	Base::Add(new trap(CVector2D(222 + 256 * 3, 440), true));
+	Base::Add(new trap(CVector2D(300 + 256 * 3, 440), true));
 
 
 }
