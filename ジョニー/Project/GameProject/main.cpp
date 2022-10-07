@@ -15,6 +15,7 @@
 #include"AnimData.h"
 #include"trapbullet.h"
 #include"trap.h"
+#include"UI.h"
 //--------------------------------------------
 //ƒOƒ[ƒoƒ‹•Ï”—Ìˆæ
 //--------------------------------------------
@@ -88,13 +89,13 @@ void Init(void)
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 	//“G‚Ì‚Ì¶¬
-	Base::Add(new Enemy(CVector2D(800, 500), true));
+	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
 	Base::Add(new trap(CVector2D(800, 500)));
 	Base::Add(new Map());
 	Base::Add(new Title);
 	Base::Add(new Player(CVector2D(250, 500), false));
-
+	Base::Add(new UI());
 
 
 

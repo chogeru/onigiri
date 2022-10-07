@@ -16,22 +16,22 @@ void Enemy::StateIdle()
 	const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
 	if (player) {
-		if (player->m_pos.x < m_pos.x - 64) {
+		if (player->m_pos.x < m_pos.x - 32) {
 			m_pos.x += -move_speed;
 			m_flip = true;
 			move_flag = true;
 		}
 		else
-			if (player->m_pos.x > m_pos.x + 64) {
+			if (player->m_pos.x > m_pos.x + 32) {
 				m_pos.x += move_speed;
 				m_flip = false;
 				move_flag = true;
 			}
-			else {
+			/*else {
 				m_state = eState_Attack;
 				m_attack_no++;
 
-			}
+			}*/
 		if (--m_cnt <= 0) {
 			m_cnt = rand() % 120 + 180;
 			m_state = eState_Wait;
@@ -90,7 +90,7 @@ Enemy::Enemy(const CVector2D& p, bool flip) :
 	Base(eType_Player) {
 	m_img = COPY_RESOURCE("Enemy", CImage);
 	m_img.ChangeAnimation(0);
-	m_pos = p;
+	m_pos_old=m_pos = p;
 	m_img.SetCenter(32, 32);
 	m_img.SetSize(64, 64);
 	m_rect = CRect(-32, -32, 32, 32);
@@ -102,7 +102,7 @@ Enemy::Enemy(const CVector2D& p, bool flip) :
 
 void Enemy::Update()
 {
-
+	m_pos_old = m_pos;
 	if (m_is_ground && m_vec.y > GRAVITY * 4)
 		m_is_ground = false;
 	m_vec.y += GRAVITY;
