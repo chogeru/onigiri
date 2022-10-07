@@ -1,4 +1,5 @@
 #pragma once
+//a
 #include "Base/Base.h"
 //マップの横のチップ数
 #define MAP_WIDTH		400
