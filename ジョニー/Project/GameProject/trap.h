@@ -1,7 +1,7 @@
 
 #pragma once
 #include"Base/Base.h"
-
+//
 class trap :public Base {
 public:
 	enum {

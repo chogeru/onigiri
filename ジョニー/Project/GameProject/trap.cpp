@@ -186,3 +186,4 @@ void trap::Collision(Base* b)
 	}
 }
 
+//

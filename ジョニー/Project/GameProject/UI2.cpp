@@ -2,7 +2,7 @@
 #include "UI2.h"
 UI2::UI2() :Base(eType_UI) {
 	m_img.Load("Image/UI2.png");
-}
+}//
 void UI2::Draw()
 {
 	int score = GameData::s_score;

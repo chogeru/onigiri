@@ -91,7 +91,7 @@ void Init(void)
 	//Base::Add(new Player(CVector2D(200, 500), false));
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
-	//ìGÇÃÇÃê∂ê¨
+	//ìGÇÃÇÃê∂ê¨//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
 	Base::Add(new trap(CVector2D(250, 500), false));
