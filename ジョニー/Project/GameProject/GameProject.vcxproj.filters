@@ -5,9 +5,6 @@
     <ClCompile Include="Base\Base.cpp">
       <Filter>Base</Filter>
     </ClCompile>
-    <ClCompile Include="Field.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>Game</Filter>
     </ClCompile>
@@ -50,9 +47,6 @@
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
       <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Field.h">
-      <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">
       <Filter>Game</Filter>

@@ -26,7 +26,7 @@ void Title::Update()
 void Title::Draw()
 {
 	m_img.Draw();
-
+	m_img.SetSize(1285, 800);
 	
 
 	//•¶Žš•\Ž¦

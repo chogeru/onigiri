@@ -3,9 +3,11 @@
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
 #include"Field.h"
+#include"Base/Base.h"
 #include "Base/Base.h"
+#include "Player.h"
 #include"Enemy.h"
-#include"Field.h"
+//#include"Field.h"
 #include"Game.h"
 #include"Goal.h"
 #include"Map.h"
@@ -68,8 +70,8 @@ void Init(void)
 	//ÉQÅ[ÉÄãNìÆéûÇ…àÍìxÇæÇØåƒÇŒÇÍÇÈ
 	//-----------------------------------------------------
 
-;
-	ADD_RESOURCE("Map", CImage::CreateImage("Image/Map.png"));
+;   ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png", player_anim_data, 32, 32));
+	//ADD_RESOURCE("Map", CImage::CreateImage("Image/Map.png"));
 	ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
 	ADD_RESOURCE("titlegamenn", CImage::CreateImage("Image/titlegamenn.png"));
 	//-----------------------------------------------------
@@ -90,7 +92,7 @@ void Init(void)
 	Base::Add(new trap(CVector2D(800, 500)));
 	
 	Base::Add(new Title);
-
+	Base::Add(new Player(CVector2D(250, 500), false));
 
 
 
