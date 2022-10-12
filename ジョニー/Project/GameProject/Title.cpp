@@ -29,7 +29,7 @@ void Title::Update()
 		m_kill = true;
 	}
 
-	m_ang += 0.1f;
+	m_ang += 0.2f;
 
 }
 
