@@ -42,7 +42,7 @@ void Title::Draw()
 	m_text.SetPos(900,100);
 	m_text.SetSize(400, 700);
 	m_text.SetAng(m_ang);
-	//m_text.Set
+	m_text.SetCenter(200, 350);
 		
 
 }
