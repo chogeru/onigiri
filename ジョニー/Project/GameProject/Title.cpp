@@ -39,10 +39,14 @@ void Title::Draw()
 	m_img.SetSize(1285, 800);
 	//マスコット出力
 	m_text.Draw();
-	m_text.SetPos(900,100);
+	//座標設定
+	m_text.SetPos(900,500);
+	//大きさ設定
 	m_text.SetSize(400, 700);
+	//回転
 	m_text.SetAng(m_ang);
-	//m_text.Set
+	//中心位置設定
+	m_text.SetCenter(200, 350);
 		
 
 }

@@ -16,6 +16,11 @@ Player::Player(const CVector2D& pos, bool flip) :
 	m_img.ChangeAnimation(0);
 	//座標設定
 	m_pos_old = m_pos = pos;
+	
+		//スクロール設定
+		m_scroll.x = m_pos.x - 1280 / 2;
+	
+
 
 	//中心位置設定
 	m_img.SetCenter(32, 32);
