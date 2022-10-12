@@ -16,6 +16,7 @@
 #include"trapbullet.h"
 #include"trap.h"
 #include"UI.h"
+//なにみてんだや
 //--------------------------------------------
 //グローバル変数領域
 //--------------------------------------------
@@ -79,6 +80,7 @@ void Init(void)
 	ADD_RESOURCE("titlegamenn2gou", CImage::CreateImage("Image/titlegamenn2gou.png"));
 	ADD_RESOURCE("titlegamenntype2", CImage::CreateImage("Image/titlegamenntype2.png"));
 	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
+	ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
 	//-----------------------------------------------------
 //初期化の命令を書く
 //ゲーム起動時に一度だけ呼ばれる
@@ -87,6 +89,7 @@ void Init(void)
 //画像の読み込みと登録　”リソース名”　　　　”ファイル名” , アニメーションデータ , 幅 , 高さ
 	//ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png", player_anim_data, 256, 256));
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Enemy.png"));
+	ADD_RESOURCE("a", CImage::CreateImage("Image/a.png"));
 	//プレイヤーの生成
 	//Base::Add(new Player(CVector2D(200, 500), false));
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));

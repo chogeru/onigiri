@@ -9,11 +9,12 @@ enum {
 	eType_Goal,
 	eType_Effect,
 	eType_UI,
-	eType_UI2,
+	eType_a,
 	eType_Scene,
 	eType_trap,
 	eType_trapbullet,
 	eType_Map,
+
 };
 
 //d—Í‰Á‘¬“x
