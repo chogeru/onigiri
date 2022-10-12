@@ -4,10 +4,13 @@
 Title::Title() :Base(eType_Scene),
 m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 {
-
+	//‰Šúver
 	//m_img = COPY_RESOURCE("titlegamenn", CImage);
+	// ƒfƒbƒv–•Á”Å
 	//m_img = COPY_RESOURCE("titlegamenn2gou", CImage);
+	// “´ŒA”Å
 	//m_img = COPY_RESOURCE("titlegamenntype2", CImage);
+	//“´ŒA”Å‰ü—Çver
 	m_img = COPY_RESOURCE("titlegamenntype2ver2", CImage);
 }
 
