@@ -28,6 +28,9 @@ void Title::Update()
 	if (PUSH(CInput::eButton1)) {
 		m_kill = true;
 	}
+
+	m_ang += 0.1f;
+
 }
 
 void Title::Draw()
@@ -38,8 +41,8 @@ void Title::Draw()
 	m_text.Draw();
 	m_text.SetPos(900,100);
 	m_text.SetSize(400, 700);
+	m_text.SetAng(m_ang);
+	//m_text.Set
+		
 
-	//•¶Žš•\Ž¦
-	//m_title_text.Draw(64, 256, 0, 0, 0, "title");
-	//m_title_text.Draw(64, 512, 0, 0, 0, "Push Z");
 }
