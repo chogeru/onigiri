@@ -13,7 +13,7 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 	//洞窟版改良ver
 	m_img = COPY_RESOURCE("titlegamenntype2ver2", CImage);
 	//マスコット読み込み
-	m_text = COPY_RESOURCE("Enemy", CImage);
+	m_text = COPY_RESOURCE("Enemy2", CImage);
 }
 
 Title::~Title()
