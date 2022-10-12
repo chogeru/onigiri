@@ -56,9 +56,8 @@ void Map::Update()
 {
 	m_scroll.x = m_pos.x - 1280 / 2;
 
-}
-;
-int Map::GetTip(const CVector2D& pos)
+}:
+;int Map::GetTip(const CVector2D& pos)
 {
 	//—ñ‚ðŒvŽZ
 	int col = pos.x / MAP_TIP_SIZE;
