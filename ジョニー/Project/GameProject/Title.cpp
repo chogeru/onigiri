@@ -13,7 +13,7 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 	//洞窟版改良ver
 	m_img = COPY_RESOURCE("titlegamenntype2ver2", CImage);
 	//マスコット読み込み
-	m_text = COPY_RESOURCE("Enemy", CImage);
+	m_text = COPY_RESOURCE("Enemy2", CImage);
 }
 
 Title::~Title()
@@ -28,6 +28,9 @@ void Title::Update()
 	if (PUSH(CInput::eButton1)) {
 		m_kill = true;
 	}
+
+	m_ang += 0.1f;
+
 }
 
 void Title::Draw()
@@ -38,8 +41,8 @@ void Title::Draw()
 	m_text.Draw();
 	m_text.SetPos(900,100);
 	m_text.SetSize(400, 700);
+	m_text.SetAng(m_ang);
+	//m_text.Set
+		
 
-	//文字表示
-	//m_title_text.Draw(64, 256, 0, 0, 0, "title");
-	//m_title_text.Draw(64, 512, 0, 0, 0, "Push Z");
 }
