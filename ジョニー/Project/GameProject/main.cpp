@@ -51,10 +51,10 @@ void Init(void)
 	CInput::SetButton(0, CInput::eButton4, 'V');
 	CInput::SetButton(0, CInput::eButton5, VK_SPACE);
 	CInput::SetButton(0, CInput::eButton10, VK_RETURN);
-	CInput::SetButton(0, CInput::eUp, 'W');
-	CInput::SetButton(0, CInput::eDown, 'S');
-	CInput::SetButton(0, CInput::eLeft, 'A');
-	CInput::SetButton(0, CInput::eRight, 'D');
+	CInput::SetButton(0, CInput::eUp, VK_UP);
+	CInput::SetButton(0, CInput::eDown, VK_DOWN);
+	CInput::SetButton(0, CInput::eLeft, VK_LEFT);
+	CInput::SetButton(0, CInput::eRight, VK_RIGHT);
 	CInput::SetButton(0, CInput::eMouseL, VK_LBUTTON);
 	CInput::SetButton(0, CInput::eMouseR, VK_RBUTTON);
 	CInput::SetButton(0, CInput::eMouseC, VK_MBUTTON);
@@ -72,7 +72,7 @@ void Init(void)
 	//初期化の命令を書く
 	//ゲーム起動時に一度だけ呼ばれる
 	//-----------------------------------------------------
-
+	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Goal.png"));
 ;   ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png", player_anim_data, 32, 32));
 	//ADD_RESOURCE("Map", CImage::CreateImage("Image/Map.png"));
 	ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
@@ -85,11 +85,10 @@ void Init(void)
 //初期化の命令を書く
 //ゲーム起動時に一度だけ呼ばれる
 //-----------------------------------------------------
-	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Goal.png"));
 //画像の読み込みと登録　”リソース名”　　　　”ファイル名” , アニメーションデータ , 幅 , 高さ
 	//ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png", player_anim_data, 256, 256));
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Enemy.png"));
-	ADD_RESOURCE("a", CImage::CreateImage("Image/a.png"));
+	//ADD_RESOURCE("a", CImage::CreateImage("Image/a.png"));
 	//プレイヤーの生成
 	//Base::Add(new Player(CVector2D(200, 500), false));
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
@@ -103,9 +102,10 @@ void Init(void)
 	Base::Add(new trap(CVector2D(200, 200), false));
 	Base::Add(new Map());
 	Base::Add(new Title);
-	Base::Add(new Player(CVector2D(400, 200), false));
+	Base::Add(new Player(CVector2D(400, 1100), false));
 	Base::Add(new UI());
-
+	//Base::Add(new Goal(CVector2D(300, 1100)));
+	
 
 
 

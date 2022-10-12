@@ -4,6 +4,7 @@
 #include "Enemy.h"
 #include "Title.h"
 #include"trap.h"
+#include"Goal.h"
 Game::Game() :Base(eType_Scene)
 {
 	//Base::Add(new Field());
@@ -13,6 +14,7 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Enemy(CVector2D(280 + 256 * 3, 440), true));
 	Base::Add(new trap(CVector2D(222 + 256 * 3, 440), true));
 	Base::Add(new trap(CVector2D(300 + 256 * 3, 440), true));
+	Base::Add(new Goal(CVector2D(300, 1140)));
 
 
 }
@@ -30,5 +32,9 @@ void Game::Update()
 	if (!Base::FindObject(eType_Player) && PUSH(CInput::eButton1)) {
 		SetKill();
 	}
+	if (!Base::FindObject(eType_Goal)) {
+		SetKill();
+	}
+
 }
 
