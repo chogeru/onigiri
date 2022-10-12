@@ -42,8 +42,8 @@ Map::Map() : Base(eType_Field)
 				y = j * MAP_TIP_SIZE;
 				//xとyの位置に敵を生成する
 				//i行j列のチップのデータを０に戻す
-				x* j =_Enemy;
-					return 0;
+			//	x* j =_Enemy.Draw;
+				//	return 0;
 			
 
 			}
