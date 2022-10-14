@@ -27,7 +27,17 @@ Game::~Game()
 	//タイトルシーンへ
 	//Base::Add(new Title());
 
-	
+	int game_state = 0;
+	switch (game_state) {
+	case 0:
+		//ポーズ中の更新処理
+		if (PUSH(CInput::eButton1))
+			game_state = 1;
+		break;
+	case 1:
+		//ゲーム中の更新処理
+		break;
+	}
 
 
 }

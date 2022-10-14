@@ -21,17 +21,7 @@ Title::~Title()
 {
 	//全てのオブジェクトを破棄
 	//Base::KillAll();
-	int game_state = 0;
-	switch (game_state) {
-	case 0:
-		//ポーズ中の更新処理
-		if (PUSH(CInput::eButton10))
-			game_state = 1;
-		break;
-	case 1:
-		//ゲーム中の更新処理
-		break;
-	}
+	
 
 
 
@@ -72,7 +62,7 @@ void Title::Draw()
 	//マスコット出力
 	m_text2.Draw();
 	//座標設定
-	m_text2.SetPos(1800, 700);
+	m_text2.SetPos(300, 900);
 	//大きさ設定
 	m_text2.SetSize(400, 700);
 	//回転
@@ -82,7 +72,7 @@ void Title::Draw()
 	//マスコット出力
 	m_text3.Draw();
 	//座標設定
-	m_text3.SetPos(1800, 900);
+	m_text3.SetPos(200, 200);
 	//大きさ設定
 	m_text3.SetSize(400, 700);
 	//回転
