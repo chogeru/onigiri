@@ -21,10 +21,10 @@ Game::Game() :Base(eType_Scene)
 }
 Game::~Game()
 {
-	//全てのオブジェクトを破棄
+	/*//全てのオブジェクトを破棄
 	Base::KillAll();
 	//タイトルシーンへ
-	Base::Add(new Title());
+	Base::Add(new Title());*/
 }
 
 void Game::Update()
