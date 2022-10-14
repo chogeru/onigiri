@@ -83,6 +83,7 @@ void Init(void)
 	ADD_RESOURCE("titlegamenntype2", CImage::CreateImage("Image/titlegamenntype2.png"));
 	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
 	ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
+	ADD_RESOURCE("Enemy3", CImage::CreateImage("Image/Enemy3.png"));
 	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
 
 	//-----------------------------------------------------
@@ -115,14 +116,18 @@ void Init(void)
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
-	//さかあなななななななななななななななななななな！！！！！！
-
-
-	//ちんあなごおおおおおおおおおおおおお！！！！！！！
-	//デェアブロス！
+	
 	
 
 
+<<<<<<< HEAD
+=======
+
+
+
+=======
+//<<<<<<< HEAD
+>>>>>>> fded90c30ff785726428455f28d1aa7b967d53da
 
 
 
@@ -130,6 +135,21 @@ void Init(void)
 	//BGM　ループ再生
 	SOUND("field")->Play();
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+=======
+//=======
+
+
+//>>>>>>> b7ef45491c2f97a27ad707be6b0400bbc79a37ca
+>>>>>>> 1d667f5067ce1ef1e36800984f189e98987ace4f
+
+>>>>>>> 7d8d453bfd6feb695ae179e0a0a7d6956ac8c87b
+
+>>>>>>> fded90c30ff785726428455f28d1aa7b967d53da
 
 
 }
