@@ -115,17 +115,14 @@ void Init(void)
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
+	//さかあなななななななななななななななななななな！！！！！！
 
+
+	//ちんあなごおおおおおおおおおおおおお！！！！！！！
+	//デェアブロス！
 	
 
-<<<<<<< HEAD
 
-
-	SOUND("field")->Load("sound/BGM/bgm_com.wav");
-	//BGM　ループ再生
-	SOUND("field")->Play();
-=======
->>>>>>> 1eab17ac59b1ec5bb5cfa2172f2a1ec9a0e9d802
 
 
 
