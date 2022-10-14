@@ -9,11 +9,12 @@ trapbullet::trapbullet(int type, const CVector2D& pos, float ang, float speed) :
 	
 	m_ang = ang;
 	m_speed = speed;
+//	trap = trapbullet;
 }
 
 void trapbullet::Update() {
-	m_vec = CVector2D(sin(m_ang), cos(m_ang)) * m_speed;
-	m_pos += m_vec;
+	//m_vec = CVector2D(sin(m_ang), cos(m_ang)) * m_speed*5;
+	//m_pos += m_vec;
 
 }
 void trapbullet::Draw() {
