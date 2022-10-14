@@ -100,9 +100,7 @@ void Init(void)
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 	ADD_RESOURCE("Wall", CImage::CreateImage("Image/Wall.png"));
 
-	SOUND("Ymada")->Load("Sound/BGM/Ymada.wav", 10);
-
-	SOUND("Ymada")->Play();
+	
 	
 	//ìGÇÃÇÃê∂ê¨//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
@@ -119,22 +117,13 @@ void Init(void)
 	Base::Add(new Wall());
 
 	
-<<<<<<< HEAD
-//<<<<<<< HEAD
-=======
 
->>>>>>> 6afe06fed0bfee172f4971551c1e00db0c633d9f
-	SOUND("field")->Load("sound/BGM/field.wav");
+
+
+	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGMÅ@ÉãÅ[Évçƒê∂
-	SOUND("field")->Play(true);
+	SOUND("field")->Play();
 
-<<<<<<< HEAD
-//=======
-	
-///>>>>>> fb5118894c6a51caeba9ffbcf2c0285a5e82b8b9
-=======
-
->>>>>>> 6afe06fed0bfee172f4971551c1e00db0c633d9f
 
 
 
