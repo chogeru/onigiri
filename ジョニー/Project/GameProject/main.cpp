@@ -96,10 +96,10 @@ void Init(void)
 	//ìGÇÃÇÃê∂ê¨//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
-	Base::Add(new trap(CVector2D(500, 200), false));
+	/*Base::Add(new trap(CVector2D(500, 200), false));
 	Base::Add(new trap(CVector2D(100, 200), false));
 	Base::Add(new trap(CVector2D(300, 200), false));
-	Base::Add(new trap(CVector2D(200, 200), false));
+	Base::Add(new trap(CVector2D(200, 200), false))*/
 	Base::Add(new Map());
 	Base::Add(new Title);
 	Base::Add(new Player(CVector2D(400, 1100), false));
