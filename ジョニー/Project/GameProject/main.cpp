@@ -83,6 +83,7 @@ void Init(void)
 	ADD_RESOURCE("titlegamenntype2", CImage::CreateImage("Image/titlegamenntype2.png"));
 	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
 	ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
+	ADD_RESOURCE("Enemy3", CImage::CreateImage("Image/Enemy3.png"));
 	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
 
 	//-----------------------------------------------------
@@ -118,9 +119,24 @@ void Init(void)
 	
 	
 
+<<<<<<< HEAD
 
 
 
+=======
+//<<<<<<< HEAD
+
+
+
+	SOUND("field")->Load("sound/BGM/bgm_com.wav");
+	//BGM@ƒ‹[ƒvÄ¶
+	SOUND("field")->Play();
+
+//=======
+
+
+//>>>>>>> b7ef45491c2f97a27ad707be6b0400bbc79a37ca
+>>>>>>> 1d667f5067ce1ef1e36800984f189e98987ace4f
 
 
 
