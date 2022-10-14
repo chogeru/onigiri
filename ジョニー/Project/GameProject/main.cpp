@@ -92,6 +92,7 @@ void Init(void)
 	//ƒvƒŒƒCƒ„[‚Ì¶¬
 	//Base::Add(new Player(CVector2D(200, 500), false));
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
+	ADD_RESOURCE("trapbullet", CImage::CreateImage("Image/trapbullet.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 	SOUND("Ymada")->Load("Sound/BGM/Ymada.wav", 10);
 
