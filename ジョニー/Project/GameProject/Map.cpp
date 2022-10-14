@@ -33,9 +33,12 @@ static int stage1data[MAP_HEIGHT][MAP_WIDTH] = {
 /// <summary>
 ///
 /// </summary>
+ 
+
 Map::Map() : Base(eType_Field)
 {
 	
+
 	for (int i = 0; i < MAP_HEIGHT; i++) {
 		for (int j = 0; j < MAP_WIDTH; j++) {
 			if (stage1data[i][j] == 0)continue;
