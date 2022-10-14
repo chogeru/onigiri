@@ -115,7 +115,11 @@ void Init(void)
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
+	//さかあなななななななななななななななななななな！！！！！！
 
+
+	//ちんあなごおおおおおおおおおおおおお！！！！！！！
+	//デェアブロス！
 	
 
 
