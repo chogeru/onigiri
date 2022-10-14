@@ -7,11 +7,11 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 	//初期ver
 	//m_img = COPY_RESOURCE("titlegamenn", CImage);
 	// デップ抹消版
-	//m_img = COPY_RESOURCE("titlegamenn2gou", CImage);
+	m_img = COPY_RESOURCE("titlegamenn2gou", CImage);
 	// 洞窟版
 	//m_img = COPY_RESOURCE("titlegamenntype2", CImage);
 	//洞窟版改良ver
-	m_img = COPY_RESOURCE("titlegamenntype2ver2", CImage);
+	//m_img = COPY_RESOURCE("titlegamenntype2ver2", CImage);
 	//マスコット読み込み
 	m_text = COPY_RESOURCE("Enemy2", CImage);
 }
