@@ -160,7 +160,10 @@ void Player::StateIdle()
 	//ジャンプ
 	if (m_is_ground && PUSH(CInput::eButton2)) {
 		m_vec.y = -jump_pow;
+		
 		m_is_ground = false;
+		
+		
 	}
 
 
@@ -168,6 +171,7 @@ void Player::StateIdle()
 	if (!m_is_ground) {
 		if (m_vec.y < 0)
 			//上昇アニメーション
+			
 			m_img.ChangeAnimation(eAnimJumpUp, false);
 		else
 			//下降アニメーション

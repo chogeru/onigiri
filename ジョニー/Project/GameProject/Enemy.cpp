@@ -4,7 +4,7 @@
 //#include"Slash.h"
 #include"Effect.h"
 #include"Map.h"
-
+#include"trapbullet.h"
 
 
 
@@ -107,6 +107,20 @@ void Enemy::Update()
 		m_is_ground = false;
 	m_vec.y += GRAVITY;
 	m_pos += m_vec;
+	//カウントアップ
+	m_cnt++;
+	//プレイヤーを取得
+	Base* b = Base::FindObject(eType_Player);
+	//プレイヤーが居れば
+	if (b) {
+		//ターゲットへのベクトル
+		CVector2D vec = b->m_pos - m_pos;
+		m_ang = atan2(vec.x, vec.y);
+		if (m_cnt >= 120) {
+			Base::Add(new trapbullet(eType_Enemy_Bullet, m_pos, m_ang, 4));
+			m_cnt = 0;
+		}
+	}
 
 
 	switch (m_state) {

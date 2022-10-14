@@ -15,6 +15,7 @@ public:
 	int m_state;
 	int m_cnt;
 	CImage m_img;
+	
 	bool m_flip;
 	bool m_is_ground;
 
