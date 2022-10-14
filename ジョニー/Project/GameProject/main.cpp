@@ -93,6 +93,8 @@ void Init(void)
 	//Base::Add(new Player(CVector2D(200, 500), false));
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
+	SOUND("SE_Ymada")->Play();
+	
 	//ìGÇÃÇÃê∂ê¨//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
@@ -106,7 +108,7 @@ void Init(void)
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	
-
+	
 
 
 
