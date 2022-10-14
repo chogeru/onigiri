@@ -6,7 +6,7 @@ trapbullet::trapbullet(int type, const CVector2D& pos, float ang, float speed) :
 {
 		m_img = COPY_RESOURCE("trapbullet", CImage);
 	m_pos = pos;
-	m_img.SetCenter(16, 16);
+	
 	m_ang = ang;
 	m_speed = speed;
 }

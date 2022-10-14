@@ -53,6 +53,19 @@ Map::Map() : Base(eType_Field)
 
 
 			}
+			/*if else (t == 4)
+			{
+				int x;
+				int y;
+				x = j * MAP_TIP_SIZE;
+				y = i * MAP_TIP_SIZE;
+				//xとyの位置に敵を生成する
+				//i行j列のチップのデータを０に戻す
+
+				Base::Add(new trapbullet(CVector2D(x, y), true));
+				//Base::Add(new trapbullet(CVector2D(), true));
+				t = 0;*/
+			//}
 		}
 	}
 	//画像複製
