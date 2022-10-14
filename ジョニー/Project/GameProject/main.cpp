@@ -16,6 +16,7 @@
 #include"trapbullet.h"
 #include"trap.h"
 #include"UI.h"
+#include"Wall.h"
 //‚È‚É‚Ý‚Ä‚ñ‚¾‚â
 //--------------------------------------------
 //ƒOƒ[ƒoƒ‹•Ï”—Ìˆæ
@@ -94,6 +95,8 @@ void Init(void)
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("trapbullet", CImage::CreateImage("Image/trapbullet.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
+	ADD_RESOURCE("Wall", CImage::CreateImage("Image/Wall.png"));
+
 	SOUND("Ymada")->Load("Sound/BGM/Ymada.wav", 10);
 
 	SOUND("Ymada")->Play();
@@ -110,7 +113,7 @@ void Init(void)
 	Base::Add(new Player(CVector2D(400, 1100), false));
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
-	
+	Base::Add(new Wall());
 	
 
 
