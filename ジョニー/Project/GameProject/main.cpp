@@ -122,8 +122,18 @@ void Init(void)
 	//デェアブロス！
 	
 
+<<<<<<< HEAD
 
 
+
+	SOUND("field")->Load("sound/BGM/bgm_com.wav");
+	//BGM　ループ再生
+	SOUND("field")->Play();
+
+=======
+
+
+>>>>>>> b7ef45491c2f97a27ad707be6b0400bbc79a37ca
 
 
 
