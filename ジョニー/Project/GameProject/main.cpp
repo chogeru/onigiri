@@ -93,7 +93,9 @@ void Init(void)
 	//Base::Add(new Player(CVector2D(200, 500), false));
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
-	SOUND("SE_Ymada")->Play();
+	SOUND("Ymada")->Load("Sound/BGM/Ymada.wav", 10);
+
+	SOUND("Ymada")->Play();
 	
 	//“G‚Ì‚Ì¶¬//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
