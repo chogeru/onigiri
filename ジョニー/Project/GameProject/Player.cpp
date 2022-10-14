@@ -160,7 +160,7 @@ void Player::StateIdle()
 	//ƒWƒƒƒ“ƒv
 	if (m_is_ground && PUSH(CInput::eButton2)) {
 		m_vec.y = -jump_pow;
-		
+		SOUND("jump")->Load("sound/BGM/jumpman.wav");
 		m_is_ground = false;
 		
 		
