@@ -111,14 +111,14 @@ void Init(void)
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	SOUND("field")->Load("sound/BGM/field.wav");
 	//BGM@ƒ‹[ƒvÄ¶
 	SOUND("field")->Play(true);
 
-=======
+//=======
 	
->>>>>>> fb5118894c6a51caeba9ffbcf2c0285a5e82b8b9
+///>>>>>> fb5118894c6a51caeba9ffbcf2c0285a5e82b8b9
 
 
 

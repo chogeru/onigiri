@@ -7,8 +7,6 @@
 #include"trap.h"
 #include"trapbullet.h"
 
-
-
 void trap::StateIdle()
 {
 	const float move_speed = 6;
