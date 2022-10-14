@@ -92,7 +92,12 @@ void Init(void)
 	//プレイヤーの生成
 	//Base::Add(new Player(CVector2D(200, 500), false));
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
+	ADD_RESOURCE("trapbullet", CImage::CreateImage("Image/trapbullet.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
+	SOUND("Ymada")->Load("Sound/BGM/Ymada.wav", 10);
+
+	SOUND("Ymada")->Play();
+	
 	//敵のの生成//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
@@ -106,10 +111,14 @@ void Init(void)
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	
+<<<<<<< HEAD
 	SOUND("field")->Load("sound/BGM/field.wav");
 	//BGM　ループ再生
 	SOUND("field")->Play(true);
 
+=======
+	
+>>>>>>> fb5118894c6a51caeba9ffbcf2c0285a5e82b8b9
 
 
 
