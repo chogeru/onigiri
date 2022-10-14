@@ -29,18 +29,18 @@ void Title::Update()
 		m_kill = true;
 	}
 
-	m_ang += 0.1f;
+	m_ang += 0.2f;
 
 }
 
 void Title::Draw()
 {
 	m_img.Draw();
-	m_img.SetSize(1285, 800);
+	m_img.SetSize(1920, 1080);
 	//マスコット出力
 	m_text.Draw();
 	//座標設定
-	m_text.SetPos(900,500);
+	m_text.SetPos(1800,500);
 	//大きさ設定
 	m_text.SetSize(400, 700);
 	//回転
