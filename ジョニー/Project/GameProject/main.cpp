@@ -119,22 +119,8 @@ void Init(void)
 	Base::Add(new Wall());
 
 	
-<<<<<<< HEAD
-//<<<<<<< HEAD
-=======
 
->>>>>>> 6afe06fed0bfee172f4971551c1e00db0c633d9f
-	SOUND("field")->Load("sound/BGM/field.wav");
-	//BGM@ƒ‹[ƒvÄ¶
-	SOUND("field")->Play(true);
 
-<<<<<<< HEAD
-//=======
-	
-///>>>>>> fb5118894c6a51caeba9ffbcf2c0285a5e82b8b9
-=======
-
->>>>>>> 6afe06fed0bfee172f4971551c1e00db0c633d9f
 
 
 
