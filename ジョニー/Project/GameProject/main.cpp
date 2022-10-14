@@ -83,6 +83,7 @@ void Init(void)
 	ADD_RESOURCE("titlegamenntype2", CImage::CreateImage("Image/titlegamenntype2.png"));
 	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
 	ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
+	ADD_RESOURCE("Enemy3", CImage::CreateImage("Image/Enemy3.png"));
 	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
 
 	//-----------------------------------------------------
@@ -122,7 +123,7 @@ void Init(void)
 	//デェアブロス！
 	
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
 
 
@@ -130,10 +131,10 @@ void Init(void)
 	//BGM　ループ再生
 	SOUND("field")->Play();
 
-=======
+//=======
 
 
->>>>>>> b7ef45491c2f97a27ad707be6b0400bbc79a37ca
+//>>>>>>> b7ef45491c2f97a27ad707be6b0400bbc79a37ca
 
 
 
