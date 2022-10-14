@@ -87,7 +87,7 @@ void Enemy::StateDown()
 }
 
 Enemy::Enemy(const CVector2D& p, bool flip) :
-	Base(eType_Player) {
+	Base(eType_Enemy) {
 	m_img = COPY_RESOURCE("Enemy", CImage);
 	m_img.ChangeAnimation(0);
 	m_pos_old=m_pos = p;

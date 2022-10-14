@@ -41,6 +41,13 @@
     <ClCompile Include="GameData.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="Wall.cpp">
+=======
+    <ClCompile Include="Gameover.cpp">
+>>>>>>> bc23f8e94dddd0148576011ad212be8f8994c167
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -88,6 +95,13 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="GameData.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="Wall.h">
+=======
+    <ClInclude Include="Gameover.h">
+>>>>>>> bc23f8e94dddd0148576011ad212be8f8994c167
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

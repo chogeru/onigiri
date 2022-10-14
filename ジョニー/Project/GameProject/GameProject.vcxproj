@@ -17,6 +17,7 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameData.cpp" />
+    <ClCompile Include="Gameover.cpp" />
     <ClCompile Include="Goal.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
@@ -25,6 +26,7 @@
     <ClCompile Include="trap.cpp" />
     <ClCompile Include="trapbullet.cpp" />
     <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimData.h" />
@@ -33,6 +35,7 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameData.h" />
+    <ClInclude Include="Gameover.h" />
     <ClInclude Include="Goal.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
@@ -40,6 +43,7 @@
     <ClInclude Include="trap.h" />
     <ClInclude Include="trapbullet.h" />
     <ClInclude Include="UI.h" />
+    <ClInclude Include="Wall.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FE2CE3B1-49BF-46A5-9DB1-9BD5B52FE1A0}</ProjectGuid>

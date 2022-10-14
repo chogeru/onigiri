@@ -16,6 +16,8 @@
 #include"trapbullet.h"
 #include"trap.h"
 #include"UI.h"
+#include"Wall.h"
+#include "Gameover.h"
 //なにみてんだや
 //--------------------------------------------
 //グローバル変数領域
@@ -81,6 +83,8 @@ void Init(void)
 	ADD_RESOURCE("titlegamenntype2", CImage::CreateImage("Image/titlegamenntype2.png"));
 	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
 	ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
+	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
+
 	//-----------------------------------------------------
 //初期化の命令を書く
 //ゲーム起動時に一度だけ呼ばれる
@@ -94,6 +98,8 @@ void Init(void)
 	ADD_RESOURCE("trap", CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("trapbullet", CImage::CreateImage("Image/trapbullet.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
+	ADD_RESOURCE("Wall", CImage::CreateImage("Image/Wall.png"));
+
 	SOUND("Ymada")->Load("Sound/BGM/Ymada.wav", 10);
 
 	SOUND("Ymada")->Play();
@@ -110,15 +116,25 @@ void Init(void)
 	Base::Add(new Player(CVector2D(400, 1100), false));
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
+	Base::Add(new Wall());
+
 	
+<<<<<<< HEAD
 //<<<<<<< HEAD
+=======
+
+>>>>>>> 6afe06fed0bfee172f4971551c1e00db0c633d9f
 	SOUND("field")->Load("sound/BGM/field.wav");
 	//BGM　ループ再生
 	SOUND("field")->Play(true);
 
+<<<<<<< HEAD
 //=======
 	
 ///>>>>>> fb5118894c6a51caeba9ffbcf2c0285a5e82b8b9
+=======
+
+>>>>>>> 6afe06fed0bfee172f4971551c1e00db0c633d9f
 
 
 

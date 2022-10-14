@@ -14,7 +14,7 @@ enum {
 	eType_trap,
 	eType_trapbullet,
 	eType_Map,
-
+	eType_Wall
 };
 
 //d—Í‰Á‘¬“x

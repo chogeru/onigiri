@@ -85,7 +85,7 @@ void trap::StateDown()
 }
 
 trap::trap(const CVector2D& p, bool flip) :
-	Base(eType_Player) {
+	Base(eType_trap) {
 	m_img = COPY_RESOURCE("trap", CImage);
 	m_img.ChangeAnimation(0);
 	m_pos_old = m_pos = p;
