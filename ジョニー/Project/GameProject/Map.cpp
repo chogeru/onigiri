@@ -4,6 +4,7 @@
 #include"trap.h"
 #include"Enemy.h"
 #include"trapbullet.h"
+#include"Wall.h"
 static int stage1data[MAP_HEIGHT][MAP_WIDTH] = {
 	//aa
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -34,6 +35,7 @@ static int stage1data[MAP_HEIGHT][MAP_WIDTH] = {
 /// </summary>
 Map::Map() : Base(eType_Field)
 {
+	
 	for (int i = 0; i < MAP_HEIGHT; i++) {
 		for (int j = 0; j < MAP_WIDTH; j++) {
 			if (stage1data[i][j] == 0)continue;
@@ -71,6 +73,7 @@ Map::Map() : Base(eType_Field)
 	//‰æ‘œ•¡»
 	m_img = COPY_RESOURCE("MapTip", CImage);
 	
+	
 }
 
 void Map::Draw()
@@ -92,7 +95,7 @@ void Map::Draw()
 			m_img.SetSize(MAP_TIP_SIZE, MAP_TIP_SIZE);
 			//•\Ž¦ˆÊ’uÝ’è
 			m_img.SetPos(MAP_TIP_SIZE * j - m_scroll.x, MAP_TIP_SIZE * i - m_scroll.y);
-
+			
 			//•`‰æ
 			m_img.Draw();
 		}
