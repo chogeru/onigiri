@@ -11,13 +11,13 @@
 
 void Enemy::StateIdle()
 {
-const float move_speed = 6;
+//const float move_speed = 6;
 	bool move_flag = false;
 	const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
 	if (player) {
 		if (player->m_pos.x < m_pos.x - 32) {
-			m_pos.x += -move_speed;
+		//	m_pos.x += -move_speed;
 			m_flip = true;
 			move_flag = true;
 		}
