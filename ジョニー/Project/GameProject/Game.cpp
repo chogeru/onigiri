@@ -5,6 +5,7 @@
 #include "Title.h"
 #include"trap.h"
 #include"Goal.h"
+#include "Gameover.h"
 Game::Game() :Base(eType_Scene)
 {
 	//Base::Add(new Field());
@@ -29,11 +30,22 @@ Game::~Game()
 void Game::Update()
 {
 	//プレイヤー死亡　ボタン１でゲームシーン終了
-	if (!Base::FindObject(eType_Player) && PUSH(CInput::eButton1)) {
-		SetKill();
+	if (!Base::FindObject(eType_Player))
+	{
+		//全てのオブジェクトを破棄
+		Base::KillAll();
+		//ゲームオーバーシーンへ
+		Base::Add(new Gameover());
 	}
+
+
+
 	if (!Base::FindObject(eType_Goal)) {
-		SetKill();
+		//全てのオブジェクトを破棄
+		Base::KillAll();
+		//タイトルシーンへ
+		Base::Add(new Title());
+
 	}
 
 }

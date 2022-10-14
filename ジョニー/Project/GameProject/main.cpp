@@ -16,6 +16,7 @@
 #include"trapbullet.h"
 #include"trap.h"
 #include"UI.h"
+#include "Gameover.h"
 //なにみてんだや
 //--------------------------------------------
 //グローバル変数領域
@@ -81,6 +82,8 @@ void Init(void)
 	ADD_RESOURCE("titlegamenntype2", CImage::CreateImage("Image/titlegamenntype2.png"));
 	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
 	ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
+	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
+
 	//-----------------------------------------------------
 //初期化の命令を書く
 //ゲーム起動時に一度だけ呼ばれる
