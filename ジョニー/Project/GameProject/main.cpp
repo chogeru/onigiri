@@ -118,11 +118,14 @@ void Init(void)
 
 	
 
+<<<<<<< HEAD
 
 
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGM@ƒ‹[ƒvÄ¶
 	SOUND("field")->Play();
+=======
+>>>>>>> 1eab17ac59b1ec5bb5cfa2172f2a1ec9a0e9d802
 
 
 
