@@ -1,6 +1,7 @@
 #pragma once
 #include <GLLibrary.h>
 enum {
+	eType_Wall,
 	eType_Field,
 	eType_Player,
 	eType_Enemy,
@@ -14,7 +15,7 @@ enum {
 	eType_trap,
 	eType_trapbullet,
 	eType_Map,
-	eType_Wall
+	
 };
 
 //èdóÕâ¡ë¨ìx
