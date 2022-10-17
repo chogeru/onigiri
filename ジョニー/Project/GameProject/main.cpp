@@ -123,6 +123,23 @@ void Init(void)
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ce0e6b095742877d1718ef94109857080cdcfa11
+	SOUND("field")->Load("sound/BGM/bgm_com.wav");
+	//BGM@ƒ‹[ƒvÄ¶
+	SOUND("field")->Play();
+
+<<<<<<< HEAD
+=======
+>>>>>>> 32cae34e4de013e0e09bc49ff5e1a6eec8d6fb7d
+>>>>>>> ce0e6b095742877d1718ef94109857080cdcfa11
+>>>>>>> fe4963de9153b541aaa927ebb9e231a47e2d0790
 
 
 }
