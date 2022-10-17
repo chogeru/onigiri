@@ -46,6 +46,8 @@ public:
 	//オブジェクトリスト
 	static std::list<Base*> m_list;
 public:
+
+
 	/// <summary>
 	/// コンストラクタ
 	/// </summary>
