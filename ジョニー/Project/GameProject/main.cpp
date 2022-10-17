@@ -118,14 +118,7 @@ void Init(void)
 	Base::Add(new Wall());
 	
 
-<<<<<<< HEAD
-=======
 
-
-
-
-
->>>>>>> ee24e25d1ee808a0fd8c27af24f9f22ecda730a2
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGM@ƒ‹[ƒvÄ¶
 	SOUND("field")->Play();
