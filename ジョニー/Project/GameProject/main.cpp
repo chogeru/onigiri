@@ -112,53 +112,15 @@ void Init(void)
 	Base::Add(new trap(CVector2D(200, 200), false))*/
 	Base::Add(new Map());
 	Base::Add(new Title);
-	Base::Add(new Player(CVector2D(400, 1100), false));
+	Base::Add(new Player(CVector2D(400, 400), false));
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
 	
-	
 
-
-
-
-
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ce0e6b095742877d1718ef94109857080cdcfa11
->>>>>>> e947257349dff5fb5dce7d289d5ffc594d119a23
->>>>>>> f9c16896c5114b17833a2f611c0477fd5dc03c97
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGM@ƒ‹[ƒvÄ¶
 	SOUND("field")->Play();
-
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 32cae34e4de013e0e09bc49ff5e1a6eec8d6fb7d
->>>>>>> ce0e6b095742877d1718ef94109857080cdcfa11
->>>>>>> fe4963de9153b541aaa927ebb9e231a47e2d0790
->>>>>>> e947257349dff5fb5dce7d289d5ffc594d119a23
->>>>>>> 54b270e691e21e683893aafbcd5916df60ad895a
->>>>>>> f9c16896c5114b17833a2f611c0477fd5dc03c97
 
 
 }
