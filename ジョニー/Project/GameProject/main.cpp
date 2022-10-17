@@ -112,23 +112,34 @@ void Init(void)
 	Base::Add(new trap(CVector2D(200, 200), false))*/
 	Base::Add(new Map());
 	Base::Add(new Title);
-	Base::Add(new Player(CVector2D(400, 1100), false));
+	Base::Add(new Player(CVector2D(400, 400), false));
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
 	
-	
+
+
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
 
 
 
 
 
-
+>>>>>>> ee24e25d1ee808a0fd8c27af24f9f22ecda730a2
+>>>>>>> 787f1858a0138e39ee6df30d214d3e7352f2feaf
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGM@ƒ‹[ƒvÄ¶
 	SOUND("field")->Play();
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> 4e4d5d33b26c6ad3ae364f36992da60a0baad818
+>>>>>>> 787f1858a0138e39ee6df30d214d3e7352f2feaf
 }
 
 
