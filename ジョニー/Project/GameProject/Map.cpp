@@ -46,6 +46,7 @@ Map::Map() : Base(eType_Field)
 
 
 			}
+
 			/*if else (t == 4)
 			{
 				int x;
