@@ -108,7 +108,7 @@ void Enemy::Update()
 	m_vec.y += GRAVITY;
 	m_pos += m_vec;
 	//カウントアップ
-	m_cnt++;
+	/*m_cnt++;
 	//プレイヤーを取得
 	Base* b = Base::FindObject(eType_Player);
 	//プレイヤーが居れば
@@ -120,7 +120,9 @@ void Enemy::Update()
 			Base::Add(new trapbullet(eType_Enemy_Bullet, m_pos, m_ang, 4));
 			m_cnt = 0;
 		}
-	}
+		*/
+		//}
+
 
 
 	switch (m_state) {
