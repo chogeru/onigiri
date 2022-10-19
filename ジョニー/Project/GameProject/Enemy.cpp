@@ -7,7 +7,7 @@
 #include"trapbullet.h"
 
 
-
+//
 
 void Enemy::StateIdle()
 {
