@@ -54,18 +54,6 @@ void Game::Update()
 		Base::KillAll();
 		//ゲームオーバーシーンへ
 		Base::Add(new Gameover());
-		//全てのオブジェクトを破棄
-		Base::KillAll();
-		//タイトルシーンへ
-		Base::Add(new Title());
-		//ボタン１でタイトル破棄
-		if (PUSH(CInput::eButton1)) {
-			m_kill = true;
-		Base::Add(new Game());
-		}
-		
-
-
 	}
 
 
@@ -74,7 +62,7 @@ void Game::Update()
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//タイトルシーンへ
-		Base::Add(new Map());
+		Base::Add(new Title());
 
 	}
 
