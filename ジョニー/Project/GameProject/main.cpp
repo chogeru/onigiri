@@ -91,7 +91,7 @@ void Init(void)
 	ADD_RESOURCE("Enemy6", CImage::CreateImage("Image/Enemy6.png"));
 	ADD_RESOURCE("Enemy7", CImage::CreateImage("Image/Enemy7.png"));
 	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
-
+	ADD_RESOURCE("M", CImage::CreateImage("Image/M.png"));
 	//-----------------------------------------------------
 //‰Šú‰»‚Ì–½—ß‚ğ‘‚­
 //ƒQ[ƒ€‹N“®‚Éˆê“x‚¾‚¯ŒÄ‚Î‚ê‚é
@@ -125,6 +125,10 @@ void Init(void)
 	
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cfaa02d6aee1a5c4f6bc3eec64645b796951bbaa
 
 	SOUND("jump")->Load("sound/BGM/jumpman.wav");
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
