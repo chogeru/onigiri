@@ -3,7 +3,7 @@
 #pragma once
 #include"Base/Base.h"
 
-class M :public M {
+class M :public Base {
 public:
 	enum {
 		eState_Idle,

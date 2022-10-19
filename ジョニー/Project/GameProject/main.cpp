@@ -17,6 +17,7 @@
 #include"UI.h"
 #include"Wall.h"
 #include "Gameover.h"
+#include"M.h"
 //‚È‚É‚İ‚Ä‚ñ‚¾‚â
 //--------------------------------------------
 //ƒOƒ[ƒoƒ‹•Ï”—Ìˆæ
@@ -123,9 +124,22 @@ void Init(void)
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
 	
+<<<<<<< HEAD
 
 
 
+=======
+<<<<<<< HEAD
+	
+
+
+
+	
+=======
+
+
+
+>>>>>>> 0d5e05423fe37f5844dd44e23687b10db2ecc9be
 
 	SOUND("jump")->Load("sound/BGM/jumpman.wav");
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
@@ -135,6 +149,7 @@ void Init(void)
 
 
 
+>>>>>>> a3052bb7667c94f3da71610e7bdb0b32f808106f
 
 }
 

@@ -168,9 +168,7 @@ void Player::StateIdle()
 	//ジャンプ
 	if (m_is_ground && PUSH(CInput::eButton2)) {
 		m_vec.y = -jump_pow;
-		if (PUSH(CInput::eButton2)) {
-			SOUND("jump")->Load("sound/BGM/jumpman.wav");
-		}
+		
 		m_is_ground = false;
 		
 		
@@ -183,6 +181,9 @@ void Player::StateIdle()
 			//上昇アニメーション
 			
 			m_img.ChangeAnimation(eAnimJumpUp, false);
+		else if(m_vec.y<0)
+		SOUND("jump")->Load("sound/BGM/jumpman.wav",false);
+
 		else
 			//下降アニメーション
 			m_img.ChangeAnimation(eAnimJumpDown, false);
