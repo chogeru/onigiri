@@ -78,7 +78,7 @@ void Title::Draw()
 	//中心位置設定
 	m_text.SetCenter(200, 350);
 
-
+	/*
 	//マスコット出力
 	m_text2.Draw();
 	//座標設定
@@ -151,7 +151,7 @@ void Title::Draw()
 	m_text7.SetAng(m_ang);
 	//中心位置設定
 	m_text7.SetCenter(200, 350);
-	*/
-
+	
+*/
 
 }

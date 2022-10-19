@@ -17,6 +17,7 @@
 #include"UI.h"
 #include"Wall.h"
 #include "Gameover.h"
+#include"M.h"
 //なにみてんだや
 //--------------------------------------------
 //グローバル変数領域
@@ -125,13 +126,12 @@ void Init(void)
 	
 
 
-
-
+/*
 	SOUND("jump")->Load("sound/BGM/jumpman.wav");
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGM　ループ再生
 	SOUND("field")->Play();
-
+	*/
 
 
 
