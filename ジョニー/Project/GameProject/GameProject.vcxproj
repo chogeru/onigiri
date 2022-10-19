@@ -19,7 +19,6 @@
     <ClCompile Include="GameData.cpp" />
     <ClCompile Include="Gameover.cpp" />
     <ClCompile Include="Goal.cpp" />
-    <ClCompile Include="M.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -38,7 +37,6 @@
     <ClInclude Include="GameData.h" />
     <ClInclude Include="Gameover.h" />
     <ClInclude Include="Goal.h" />
-    <ClInclude Include="M.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Title.h" />

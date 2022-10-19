@@ -45,18 +45,32 @@ Game::~Game()
 
 void Game::Update()
 {
-
+	
 	
 	//プレイヤー死亡　ボタン１でゲームシーン終了
-	if (!Base::FindObject(eType_Player))
+	
+
+if (!Base::FindObject(eType_Player))
 	{
 		//全てのオブジェクトを破棄
 		Base::KillAll();
 		//ゲームオーバーシーンへ
 		Base::Add(new Gameover());
+		//ボタン１でタイトル破棄
+		if (PUSH(CInput::eButton1)) {
+			m_kill = true;
+			//全てのオブジェクトを破棄
+			Base::KillAll();
+			//タイトルシーンへ
+			Base::Add(new Title());
+
+
+		}
+
+
+
+
 	}
-
-
 
 	if (!Base::FindObject(eType_Goal)) {
 		//全てのオブジェクトを破棄
