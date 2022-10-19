@@ -7,6 +7,7 @@
 #include"Goal.h"
 #include "Gameover.h"
 #include"Wall.h"
+#include "Map.h"
 Game::Game() :Base(eType_Scene)
 {
 	//Base::Add(new Field());
@@ -16,7 +17,7 @@ Game::Game() :Base(eType_Scene)
 	//Base::Add(new Enemy(CVector2D(280 + 256 * 3, 440), true));
 	//Base::Add(new trap(CVector2D(222 + 256 * 3, 440), true));
 	//Base::Add(new trap(CVector2D(300 + 256 * 3, 440), true));
-	Base::Add(new Goal(CVector2D(300, 1140)));
+	Base::Add(new Goal(CVector2D(300, 360)));
 	
 
 }
@@ -53,18 +54,6 @@ void Game::Update()
 		Base::KillAll();
 		//ゲームオーバーシーンへ
 		Base::Add(new Gameover());
-		//全てのオブジェクトを破棄
-		Base::KillAll();
-		//タイトルシーンへ
-		Base::Add(new Title());
-		//ボタン１でタイトル破棄
-		if (PUSH(CInput::eButton1)) {
-			m_kill = true;
-		Base::Add(new Game());
-		}
-		
-
-
 	}
 
 

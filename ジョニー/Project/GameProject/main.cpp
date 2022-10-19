@@ -91,7 +91,7 @@ void Init(void)
 	ADD_RESOURCE("Enemy6", CImage::CreateImage("Image/Enemy6.png"));
 	ADD_RESOURCE("Enemy7", CImage::CreateImage("Image/Enemy7.png"));
 	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
-
+	ADD_RESOURCE("M", CImage::CreateImage("Image/M.png"));
 	//-----------------------------------------------------
 //‰Šú‰»‚Ì–½—ß‚ğ‘‚­
 //ƒQ[ƒ€‹N“®‚Éˆê“x‚¾‚¯ŒÄ‚Î‚ê‚é
