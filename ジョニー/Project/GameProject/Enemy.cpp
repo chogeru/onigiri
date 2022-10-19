@@ -16,13 +16,13 @@ const float move_speed = 50;
 	const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
 	if (player) {
-		if (player->m_pos.x < m_pos.x - 64) {
+		if (player->m_pos.x < m_pos.x - 32) {
 			m_pos.x += -move_speed;
 			m_flip = true;
 			move_flag = true;
 		}
 		else
-			if (player->m_pos.x > m_pos.x + 64) {
+			if (player->m_pos.x > m_pos.x + 32) {
 				m_pos.x += move_speed;
 				m_flip = false;
 				move_flag = true;
