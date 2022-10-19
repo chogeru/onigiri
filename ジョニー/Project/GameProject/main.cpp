@@ -125,10 +125,7 @@ void Init(void)
 	
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> cfaa02d6aee1a5c4f6bc3eec64645b796951bbaa
 
 	SOUND("jump")->Load("sound/BGM/jumpman.wav");
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
