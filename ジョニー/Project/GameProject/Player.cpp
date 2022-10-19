@@ -102,11 +102,11 @@ void Player::Collision(Base* b)
 				m_vec.y = 0;
 				m_is_ground = true;
 			}
-			/*/if (m_pos.y > m->GetGroundY()) {
+			if (m_pos.y > m->GetGroundY()) {
 				
 				SetKill();
 				
-			}*/
+			}
 		}
 		
 		
