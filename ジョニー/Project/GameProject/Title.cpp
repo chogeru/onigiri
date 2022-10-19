@@ -151,7 +151,7 @@ void Title::Draw()
 	m_text7.SetAng(m_ang);
 	//’†SˆÊ’uİ’è
 	m_text7.SetCenter(200, 350);
-	*/
+	
 */
 
 }
