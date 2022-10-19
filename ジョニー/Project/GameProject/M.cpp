@@ -12,7 +12,7 @@ void M::StateIdle()
 {
 	//const float move_speed = 6;
 	bool move_flag = false;
-	const float jump_pow = 12;
+	///const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
 	if (player) {
 		if (player->m_pos.x < m_pos.x - 32) {
@@ -87,7 +87,7 @@ void M::StateDown()
 
 M::M(const CVector2D& p, bool flip) :
 	Base(eType_Enemy) {
-	m_img = COPY_RESOURCE("Enemy", CImage);
+	m_img = COPY_RESOURCE("M", CImage);
 	m_img.ChangeAnimation(0);
 	m_pos_old = m_pos = p;
 	m_img.SetCenter(32, 32);

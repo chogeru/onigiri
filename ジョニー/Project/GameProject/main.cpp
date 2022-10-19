@@ -17,6 +17,7 @@
 #include"UI.h"
 #include"Wall.h"
 #include "Gameover.h"
+#include"M.h"
 //なにみてんだや
 //--------------------------------------------
 //グローバル変数領域
@@ -123,20 +124,12 @@ void Init(void)
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
 	
-
-
-<<<<<<< HEAD
-
-	SOUND("field")->Load("sound/BGM/bgm_com.wav");
-	//BGM　ループ再生
-	SOUND("field")->Play();
-
-
-
-
-=======
 	
->>>>>>> 9e9d47f47a28714a46bfd646033b875bb67cd8b4
+
+
+
+	
+
 }
 
 
