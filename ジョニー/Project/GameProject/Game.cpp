@@ -52,7 +52,7 @@ void Game::Update()
 	
 	//プレイヤー死亡　ボタン１でゲームシーン終了
 	
-
+	/*
 if (!Base::FindObject(eType_Player))
 	{
 		//全てのオブジェクトを破棄
@@ -66,11 +66,11 @@ if (!Base::FindObject(eType_Player))
 
 
 		}
+*/
 
 
 
-
-	}
+	
 
 	if (!Base::FindObject(eType_Goal)) {
 		//全てのオブジェクトを破棄
