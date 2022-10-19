@@ -17,7 +17,6 @@
     <ClCompile Include="trapbullet.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="Wall.cpp" />
-    <ClCompile Include="M.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimData.h" />
@@ -35,6 +34,5 @@
     <ClInclude Include="trapbullet.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="Wall.h" />
-    <ClInclude Include="M.h" />
   </ItemGroup>
 </Project>
