@@ -109,7 +109,7 @@ void Init(void)
 	ADD_RESOURCE("Wall", CImage::CreateImage("Image/Wall.png"));
 
 	
-	
+	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Goal.png"));
 	//ìGÇÃÇÃê∂ê¨//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
