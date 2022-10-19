@@ -102,7 +102,15 @@ void Player::Collision(Base* b)
 				m_vec.y = 0;
 				m_is_ground = true;
 			}
+			if (m_pos.y > m->GetGroundY()) {
+				
+				SetKill();
+				
+			}
 		}
+		
+		
+
 		break;
 	}
 	/*case eType_trap_Attack:
@@ -160,7 +168,9 @@ void Player::StateIdle()
 	//ƒWƒƒƒ“ƒv
 	if (m_is_ground && PUSH(CInput::eButton2)) {
 		m_vec.y = -jump_pow;
-		SOUND("jump")->Load("sound/BGM/jumpman.wav");
+		if (PUSH(CInput::eButton2)) {
+			SOUND("jump")->Load("sound/BGM/jumpman.wav");
+		}
 		m_is_ground = false;
 		
 		
