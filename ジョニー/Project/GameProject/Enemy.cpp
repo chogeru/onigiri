@@ -11,19 +11,19 @@
 
 void Enemy::StateIdle()
 {
-//const float move_speed = 6;
+const float move_speed = 5;
 	bool move_flag = false;
 	const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
 	if (player) {
-		if (player->m_pos.x < m_pos.x - 32) {
-		//	m_pos.x += -move_speed;
+		if (player->m_pos.x < m_pos.x - 64) {
+			m_pos.x += -move_speed;
 			m_flip = true;
 			move_flag = true;
 		}
 		else
-			if (player->m_pos.x > m_pos.x + 32) {
-				//m_pos.x += move_speed;
+			if (player->m_pos.x > m_pos.x + 64) {
+				m_pos.x += move_speed;
 				m_flip = false;
 				move_flag = true;
 			}
@@ -108,7 +108,7 @@ void Enemy::Update()
 	m_vec.y += GRAVITY;
 	m_pos += m_vec;
 	//カウントアップ
-	m_cnt++;
+	/*m_cnt++;
 	//プレイヤーを取得
 	Base* b = Base::FindObject(eType_Player);
 	//プレイヤーが居れば
@@ -120,7 +120,9 @@ void Enemy::Update()
 			Base::Add(new trapbullet(eType_Enemy_Bullet, m_pos, m_ang, 4));
 			m_cnt = 0;
 		}
-	}
+		*/
+		//}
+
 
 
 	switch (m_state) {

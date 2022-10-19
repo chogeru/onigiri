@@ -28,4 +28,25 @@ void trapbullet::Draw() {
 
 void trapbullet::Collision(Base* b)
 {
+	switch (b->m_type) {
+	case eType_Field:
+		if (Map* m = dynamic_cast<Map*>(b)) {
+			int t = m->CollisionMap(m_pos);
+			if (t != 0)
+				SetKill();
+		}
+		break;
+	case eType_Player:
+		if (m_type == eType_Enemy_Bullet && Base::CollisionCircle(this, b)) {
+			SetKill();
+			b->SetKill();
+		}
+		break;
+	case eType_trap:
+		if (m_type == eType_Player_Bullet && Base::CollisionCircle(this, b)) {
+			SetKill();
+			b->SetKill();
+		}
+		break;
+	}
 }
