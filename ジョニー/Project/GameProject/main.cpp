@@ -16,7 +16,7 @@
 #include"trap.h"
 #include"UI.h"
 #include"Wall.h"
-#include "Gameover.h"
+//#include "Gameover.h"
 #include"M.h"
 //�Ȃɂ݂Ă񂾂�
 //--------------------------------------------
