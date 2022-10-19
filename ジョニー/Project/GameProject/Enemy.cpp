@@ -7,11 +7,11 @@
 #include"trapbullet.h"
 
 
-
+//
 
 void Enemy::StateIdle()
 {
-const float move_speed = 5;
+const float move_speed = 50;
 	bool move_flag = false;
 	const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
