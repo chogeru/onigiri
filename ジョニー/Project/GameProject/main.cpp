@@ -124,25 +124,7 @@ void Init(void)
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
 	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-
-
-=======
-<<<<<<< HEAD
-	
-
-
-
-	
-=======
-
-
->>>>>>> bbcd14904581ed43a99a4431b47b7670cb02502c
-
->>>>>>> 0d5e05423fe37f5844dd44e23687b10db2ecc9be
 
 /*
 	SOUND("jump")->Load("sound/BGM/jumpman.wav");
