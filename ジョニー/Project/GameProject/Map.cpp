@@ -149,10 +149,7 @@ void Map::Draw()
 			}
 		}
 	
-}
 
-	void Map::Draw()
-	{
 		/*float sc;
 		sc = m_scroll.x / 4;
 		//m_ing.SetRect(sc, 0, sc + 1280, 720);
