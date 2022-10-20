@@ -79,8 +79,30 @@ Map::Map() : Base(eType_Field)
 
 		}
 	}
+<<<<<<< HEAD
+	//画像複製
+	m_img = COPY_RESOURCE("MapTip", CImage);
+	
+	
+}
+
+void Map::Draw()
+{
+	
+
+	int x1 = 2*2;
+	int	x2 = x1 + 30;
+	/*float sc;
+	sc = m_scroll.x / 4;
+	//m_ing.SetRect(sc, 0, sc + 1280, 720);
+	sc = m_scroll.x;
+	//m_ing.SetRect(sc, 0, sc + 1280, 720);
+	*/
+	//マップチップによる表示の繰り返し
+=======
+>>>>>>> 9d538bd8c7c863dcaebb43e981a1e0ba6caaa4a4
 	for (int i = 0; i < MAP_HEIGHT; i++) {
-		for (int j = 0; j < MAP_WIDTH; j++) {
+		for (int j = x1; j < x2; j++) {
 			if (stage1data[i][j] == 0)continue;
 			int& t = stage1data[i][j];
 			if (t == 6)
