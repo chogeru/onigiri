@@ -69,6 +69,10 @@ Map::Map() : Base(eType_Field)
 
 void Map::Draw()
 {
+	
+
+	int x1 = 2*2;
+	int	x2 = x1 + 30;
 	/*float sc;
 	sc = m_scroll.x / 4;
 	//m_ing.SetRect(sc, 0, sc + 1280, 720);
@@ -77,7 +81,7 @@ void Map::Draw()
 	*/
 	//マップチップによる表示の繰り返し
 	for (int i = 0; i < MAP_HEIGHT; i++) {
-		for (int j = 0; j < MAP_WIDTH; j++) {
+		for (int j = x1; j < x2; j++) {
 			if (stage1data[i][j] == 0)continue;
 			int t = stage1data[i][j];
 			//画像切り抜き
