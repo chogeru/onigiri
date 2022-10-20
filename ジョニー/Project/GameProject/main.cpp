@@ -4,7 +4,6 @@
 #define SCREEN_HEIGHT 1080
 #include"Field.h"
 #include"Base/Base.h"
-#include "Base/Base.h"
 #include "Player.h"
 #include"Enemy.h"
 //#include"Field.h"
@@ -17,16 +16,20 @@
 #include"trap.h"
 #include"UI.h"
 #include"Wall.h"
-#include "Gameover.h"
+//#include "Gameover.h"
+#include"M.h"
 //なにみてんだや
 //--------------------------------------------
 //グローバル変数領域
 //--------------------------------------------
 //(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
 //(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
-//
-
-
+//(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
+//(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
+//(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
+//(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
+//(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
+//(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)(´・ω・`)
 void MainLoop(void) {
 	//--------------------------------------------------------------
 	//ゲーム中の動きはここに書く
@@ -84,8 +87,12 @@ void Init(void)
 	ADD_RESOURCE("titlegamenntype2ver2", CImage::CreateImage("Image/titlegamenntype2ver2.png"));
 	ADD_RESOURCE("Enemy2", CImage::CreateImage("Image/Enemy2.png"));
 	ADD_RESOURCE("Enemy3", CImage::CreateImage("Image/Enemy3.png"));
+	ADD_RESOURCE("Enemy4", CImage::CreateImage("Image/Enemy4.png"));
+	ADD_RESOURCE("Enemy5", CImage::CreateImage("Image/Enemy5.png"));
+	ADD_RESOURCE("Enemy6", CImage::CreateImage("Image/Enemy6.png"));
+	ADD_RESOURCE("Enemy7", CImage::CreateImage("Image/Enemy7.png"));
 	ADD_RESOURCE("gameovergamenn", CImage::CreateImage("Image/gameovergamenn.png"));
-
+	ADD_RESOURCE("M", CImage::CreateImage("Image/M.png"));
 	//-----------------------------------------------------
 //初期化の命令を書く
 //ゲーム起動時に一度だけ呼ばれる
@@ -102,7 +109,7 @@ void Init(void)
 	ADD_RESOURCE("Wall", CImage::CreateImage("Image/Wall.png"));
 
 	
-	
+	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Goal.png"));
 	//敵のの生成//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
 	//Enemy(CVector2D(200, 500));
@@ -119,12 +126,23 @@ void Init(void)
 	
 
 
+<<<<<<< HEAD
+=======
+/*
+	SOUND("jump")->Load("sound/BGM/jumpman.wav");
+>>>>>>> 9d538bd8c7c863dcaebb43e981a1e0ba6caaa4a4
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGM　ループ再生
 	SOUND("field")->Play();
+	*/
 
 
 
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9d538bd8c7c863dcaebb43e981a1e0ba6caaa4a4
 }
 
 

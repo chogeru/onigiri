@@ -5,33 +5,32 @@
 #include"Effect.h"
 #include"Map.h"
 #include"trapbullet.h"
+#include"M.h"
 
 
-//
-
-void Enemy::StateIdle()
+void M::StateIdle()
 {
-const float move_speed = 5;
+	//const float move_speed = 6;
 	bool move_flag = false;
-	const float jump_pow = 12;
+	///const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
 	if (player) {
 		if (player->m_pos.x < m_pos.x - 32) {
-			m_pos.x += -move_speed;
+			//	m_pos.x += -move_speed;
 			m_flip = true;
 			move_flag = true;
 		}
 		else
 			if (player->m_pos.x > m_pos.x + 32) {
-				m_pos.x += move_speed;
+				//m_pos.x += move_speed;
 				m_flip = false;
 				move_flag = true;
 			}
-			/*else {
-				m_state = eState_Attack;
-				m_attack_no++;
+		/*else {
+			m_state = eState_Attack;
+			m_attack_no++;
 
-			}*/
+		}*/
 		if (--m_cnt <= 0) {
 			m_cnt = rand() % 120 + 180;
 			m_state = eState_Wait;
@@ -45,7 +44,7 @@ const float move_speed = 5;
 	}
 }
 
-void Enemy::StateAttack()
+void M::StateAttack()
 {
 	m_img.ChangeAnimation(eAnimAttack01, false);
 	/*if (m_img.GetIndex() == 3) {
@@ -61,14 +60,14 @@ void Enemy::StateAttack()
 	}
 }
 
-void Enemy::StateDamage()
+void M::StateDamage()
 {
 	m_img.ChangeAnimation(eAnimDamage, false);
 	if (m_img.CheckAnimationEnd()) {
 		m_state = eState_Idle;
 	}
 }
-void Enemy::StateWait()
+void M::StateWait()
 {
 	m_img.ChangeAnimation(eAnimIdle);
 	if (--m_cnt <= 0) {
@@ -77,7 +76,7 @@ void Enemy::StateWait()
 	}
 }
 
-void Enemy::StateDown()
+void M::StateDown()
 {
 	m_img.ChangeAnimation(eAnimDown, false);
 	if (m_img.CheckAnimationEnd()) {
@@ -86,11 +85,11 @@ void Enemy::StateDown()
 	}
 }
 
-Enemy::Enemy(const CVector2D& p, bool flip) :
+M::M(const CVector2D& p, bool flip) :
 	Base(eType_Enemy) {
-	m_img = COPY_RESOURCE("Enemy", CImage);
+	m_img = COPY_RESOURCE("M", CImage);
 	m_img.ChangeAnimation(0);
-	m_pos_old=m_pos = p;
+	m_pos_old = m_pos = p;
 	m_img.SetCenter(32, 32);
 	m_img.SetSize(64, 64);
 	m_rect = CRect(-32, -32, 32, 32);
@@ -100,7 +99,7 @@ Enemy::Enemy(const CVector2D& p, bool flip) :
 	m_hp = 50;
 }
 
-void Enemy::Update()
+void M::Update()
 {
 	m_pos_old = m_pos;
 	if (m_is_ground && m_vec.y > GRAVITY * 4)
@@ -146,7 +145,7 @@ void Enemy::Update()
 	m_img.UpdateAnimation();
 }
 
-void Enemy::Draw()
+void M::Draw()
 {
 	m_img.SetPos(GetScreenPos(m_pos));
 	m_img.SetFlipH(m_flip);
@@ -154,7 +153,7 @@ void Enemy::Draw()
 	DrawRect();
 }
 
-void Enemy::Collision(Base* b)
+void M::Collision(Base* b)
 {
 	switch (b->m_type) {
 	case eType_Player:
@@ -164,28 +163,28 @@ void Enemy::Collision(Base* b)
 			SetKill();
 		}
 
-		
-	
 
 
-	/*case eType_Player_Attack:
-		if (Slash* s = dynamic_cast<Slash*>(b)) {
-			if (m_damage_no != s->GetAttackNo() && Base::CollisionRect(this, s)) {
-				m_damage_no = s->GetAttackNo();
-				m_hp -= 50;
-				if (m_hp <= 0) {
-					m_state = eState_Down;
 
+
+		/*case eType_Player_Attack:
+			if (Slash* s = dynamic_cast<Slash*>(b)) {
+				if (m_damage_no != s->GetAttackNo() && Base::CollisionRect(this, s)) {
+					m_damage_no = s->GetAttackNo();
+					m_hp -= 50;
+					if (m_hp <= 0) {
+						m_state = eState_Down;
+
+					}
+					else {
+						m_state = eState_Damage;
+					}
+					Base::Add(new Effect("Effect_Blood", m_pos + CVector2D(0, -128), m_flip));
 				}
-				else {
-					m_state = eState_Damage;
-				}
-				Base::Add(new Effect("Effect_Blood", m_pos + CVector2D(0, -128), m_flip));
+
 			}
+			break;*/
 
-		}
-		break;*/
-	
 	case eType_Field:
 		if (Map* m = dynamic_cast<Map*>(b)) {
 			int t = m->CollisionMap(CVector2D(m_pos.x, m_pos_old.y), m_rect);

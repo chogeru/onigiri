@@ -11,6 +11,7 @@
 class Map : public Base {
 private:
 	CImage m_img;
+	float m_ground_y;
 public:
 	Map();
 	void Draw();
@@ -22,6 +23,9 @@ public:
 	//ƒ}ƒbƒv‚Æ‚Ì“–‚½‚è”»’è
 	int CollisionMap(const CVector2D& pos);
 	int CollisionMap(const CVector2D& pos, const CRect& rect);
-
+	
+	float GetGroundY() {
+		return m_ground_y;
+	}
 
 };

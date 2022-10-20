@@ -1,108 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="AnimData.cpp" />
+    <ClCompile Include="Base\Base.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameData.cpp" />
+    <ClCompile Include="Gameover.cpp" />
+    <ClCompile Include="Goal.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Base\Base.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="AnimData.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Title.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Goal.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Effect.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Map.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="trap.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="trapbullet.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="UI.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="GameData.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="Wall.cpp">
-=======
-    <ClCompile Include="Gameover.cpp">
->>>>>>> bc23f8e94dddd0148576011ad212be8f8994c167
-      <Filter>Game</Filter>
-    </ClCompile>
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="trap.cpp" />
+    <ClCompile Include="trapbullet.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Base">
-      <UniqueIdentifier>{92d21a0f-3d8d-4a8b-8c39-31fd384788c0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game">
-      <UniqueIdentifier>{3f01e8b2-9cb0-43f7-a56b-0dde0f51209f}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Base\Base.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="AnimData.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Title.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Goal.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Effect.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Map.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="trap.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="trapbullet.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="UI.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="GameData.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="Wall.h">
-=======
-    <ClInclude Include="Gameover.h">
->>>>>>> bc23f8e94dddd0148576011ad212be8f8994c167
-      <Filter>Game</Filter>
-    </ClInclude>
+    <ClInclude Include="AnimData.h" />
+    <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameData.h" />
+    <ClInclude Include="Gameover.h" />
+    <ClInclude Include="Goal.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="trap.h" />
+    <ClInclude Include="trapbullet.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="Wall.h" />
   </ItemGroup>
 </Project>

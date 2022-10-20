@@ -11,7 +11,7 @@ void trap::StateIdle()
 {
 	//const float move_speed = 6;
 	bool move_flag = false;
-	const float jump_pow = 12;
+	//const float jump_pow = 12;
 	Base* player = Base::FindObject(eType_Player);
 	if (player) {
 		if (player->m_pos.x < m_pos.x - 32) {
@@ -66,14 +66,14 @@ void trap::StateDamage()
 		m_state = eState_Idle;
 	}
 }
-void trap::StateWait()
+/*void trap::StateWait()
 {
 	m_img.ChangeAnimation(eAnimIdle);
 	if (--m_cnt <= 0) {
 		m_cnt = rand() % 120 + 180;
 		m_state = eState_Idle;
 	}
-}
+}*/
 
 void trap::StateDown()
 {
@@ -117,12 +117,13 @@ void trap::Update()
 		m_ang = atan2(vec.x, vec.y);
 		if (m_cnt >= 120) {
 			Base::Add(new trapbullet(eType_Enemy_Bullet, m_pos, m_ang, 4));
+			
 			m_cnt = 0;
 		}
 	}
 
 
-	switch (m_state) {
+	/*switch (m_state) {
 	case eState_Idle:
 		StateIdle();
 		break;
@@ -139,7 +140,7 @@ void trap::Update()
 		StateWait();
 		break;
 
-	}
+	}*/
 	m_img.UpdateAnimation();
 }
 
