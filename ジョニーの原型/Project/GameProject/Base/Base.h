@@ -16,6 +16,7 @@ enum {
 	eType_trapbullet,
 	eType_Map,
 	eType_M,
+	eType_END
 };
 
 //d—Í‰Á‘¬“x

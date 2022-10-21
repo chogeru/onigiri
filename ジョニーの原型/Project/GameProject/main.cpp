@@ -18,6 +18,7 @@
 #include"Wall.h"
 #include "Gameover.h"
 #include"M.h"
+#include"END.h"
 //‚È‚É‚İ‚Ä‚ñ‚¾‚â//
 //--------------------------------------------
 //ƒOƒ[ƒoƒ‹•Ï”—Ìˆæ
@@ -127,8 +128,6 @@ void Init(void)
 	Base::Add(new UI());
 	//Base::Add(new Goal(CVector2D(300, 1100)));
 	Base::Add(new Wall());
-	
-
 
 
 

@@ -48,7 +48,12 @@ Game::~Game()
 
 void Game::Update()
 {
-	
+	if (!Base::FindObject(eType_Goal)) {
+		Base::Add(new Title());
+		if (PUSH(CInput::eButton1))
+		SetKill();
+	}
+
 	
 	//プレイヤー死亡　ボタン１でゲームシーン終了
 	
@@ -78,7 +83,7 @@ if (!Base::FindObject(eType_Player))
 		Base::KillAll();
 		//タイトルシーンへ
 		Base::Add(new Title());
-
+		
 	}
 	
 }

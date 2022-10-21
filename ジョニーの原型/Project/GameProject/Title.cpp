@@ -17,13 +17,13 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 	m_img2 = COPY_RESOURCE("titlerogo2", CImage);
 	
 	//マスコット読み込み
-	m_text = COPY_RESOURCE("Enemy", CImage);
+	/*m_text = COPY_RESOURCE("Enemy", CImage);
 	m_text2 = COPY_RESOURCE("Enemy2", CImage);
 	m_text3 = COPY_RESOURCE("Enemy3", CImage);
 	m_text4 = COPY_RESOURCE("Enemy4", CImage);
 	m_text5 = COPY_RESOURCE("Enemy5", CImage);
 	m_text6 = COPY_RESOURCE("Enemy6", CImage);
-	m_text7 = COPY_RESOURCE("Enemy7", CImage);
+	m_text7 = COPY_RESOURCE("Enemy7", CImage);*/
 }
 
 Title::~Title()
@@ -49,7 +49,7 @@ void Title::Update()
 		m_kill = true;
 	}
 
-	m_ang += 0.02f;
+	//m_ang += 0.02f;
 	
 
 }
@@ -65,7 +65,7 @@ void Title::Draw()
 	m_img2.SetAng(m_ang);
 	m_text.SetCenter(50, 150);
 
-	//マスコット出力
+/*	//マスコット出力
 	m_text.Draw();
 	//座標設定
 	m_text.SetPos(1800,900);
@@ -161,7 +161,7 @@ void Title::Draw()
 	m_text7.SetAng(m_ang);
 	//中心位置設定
 	m_text7.SetCenter(200, 350);
-	
+	*/
 
 
 }

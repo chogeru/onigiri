@@ -5,13 +5,14 @@
 #include"Effect.h"
 //#include"Goal.h"
 //#include"Slash.h"
-
-
+#include"Title.h"
+#include"END.h"
 
 Player::Player(const CVector2D& pos, bool flip) :
 	Base(eType_Player) {
 	//画像複製
 	m_img = COPY_RESOURCE("Player", CImage);
+	//m_img = COPY_RESOURCE("END", CImage);
 	//再生アニメーション設定
 	m_img.ChangeAnimation(0);
 	//座標設定
@@ -88,7 +89,12 @@ void Player::Collision(Base* b)
 	switch (b->m_type) {
 	case eType_Goal:
 		if (Base::CollisionRect(this, b)) {
+			
+			//if (PUSH(CInput::eButton1)){
 			b->SetKill();
+			
+			Base::Add(new END());
+			//}
 		}
 		break;
 	case eType_Field:
