@@ -38,12 +38,12 @@ Game::~Game()
 	case 1:
 		//ゲーム中の更新処理
 		break;
-	}
-	//全てのオブジェクトを破棄
-	Base::KillAll();
-	//タイトルシーンへ
-	Base::Add(new Title());
 
+		//全てのオブジェクトを破棄
+		Base::KillAll();
+		//タイトルシーンへ
+		Base::Add(new Title());
+	}
 }
 
 void Game::Update()
@@ -71,6 +71,7 @@ if (!Base::FindObject(eType_Player))
 
 
 	
+	
 
 	if (!Base::FindObject(eType_Goal)) {
 		//全てのオブジェクトを破棄
@@ -79,6 +80,6 @@ if (!Base::FindObject(eType_Player))
 		Base::Add(new Title());
 
 	}
-
+	
 }
 

@@ -16,7 +16,7 @@
 #include"trap.h"
 #include"UI.h"
 #include"Wall.h"
-//#include "Gameover.h"
+#include "Gameover.h"
 #include"M.h"
 //Ç»Ç…Ç›ÇƒÇÒÇæÇ‚//
 //--------------------------------------------
@@ -112,7 +112,7 @@ void Init(void)
 	ADD_RESOURCE("titlerogo2", CImage::CreateImage("Image/titlerogo2.png"));
 
 
-	
+	ADD_RESOURCE("END", CImage::CreateImage("Image/END.png"));
 	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Goal.png"));
 	//ìGÇÃÇÃê∂ê¨//
 	//Base::Add(new Enemy(CVector2D(800, 500), true));
