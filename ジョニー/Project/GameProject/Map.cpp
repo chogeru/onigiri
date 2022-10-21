@@ -74,7 +74,7 @@ void Map::Draw()
 	int	x2 = x1 + 31;
 	if (x2 > MAP_WIDTH - 1) x2 = MAP_WIDTH - 1;
 
-	//マップチップによる表示の繰り返し
+	//マップチップによる表示の繰り返しac
 
 	for (int i = 0; i < MAP_HEIGHT; i++) {
 		for (int j = x1; j < x2; j++) {
@@ -143,3 +143,4 @@ int Map::CollisionMap(const CVector2D& pos, const CRect& rect)
 	if (t != 0) return t;
 	return 0;
 }
+
