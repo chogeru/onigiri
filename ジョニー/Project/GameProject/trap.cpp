@@ -115,7 +115,7 @@ void trap::Update()
 		//ターゲットへのベクトル
 		CVector2D vec = b->m_pos - m_pos;
 		m_ang = atan2(vec.x, vec.y);
-		if (m_cnt >= 130) {
+		if (m_cnt >= 210) {
 			Base::Add(new trapbullet(eType_Enemy_Bullet, m_pos, m_ang, 4));
 			
 			m_cnt = 0;
