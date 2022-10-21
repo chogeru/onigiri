@@ -6,7 +6,7 @@
 //マップの縦のチップ数
 #define MAP_HEIGHT		2200
 //マップチップの大きさ
-#define MAP_TIP_SIZE	 64
+#define MAP_TIP_SIZE	 6
 
 class Map : public Base {
 private:
