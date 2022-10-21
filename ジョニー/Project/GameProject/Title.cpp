@@ -5,12 +5,17 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 {
 	//初期ver
 	//m_img = COPY_RESOURCE("titlegamenn", CImage);
-	// デップ抹消版
-	m_img = COPY_RESOURCE("titlegamenn2gou", CImage);
+	
 	// 洞窟版
 	//m_img = COPY_RESOURCE("titlegamenntype2", CImage);
 	//洞窟版改良ver
 	//m_img = COPY_RESOURCE("titlegamenntype2ver2", CImage);
+	// デップ抹消版
+	//m_img = COPY_RESOURCE("titlegamenn2gou", CImage); 
+	//タイプZ
+	m_img = COPY_RESOURCE("titletypez", CImage);
+	m_img2 = COPY_RESOURCE("titlerogo2", CImage);
+	
 	//マスコット読み込み
 	m_text = COPY_RESOURCE("Enemy", CImage);
 	m_text2 = COPY_RESOURCE("Enemy2", CImage);
@@ -54,6 +59,11 @@ void Title::Draw()
 	m_img.Draw();
 	m_img.SetSize(1920, 1080);
 
+	m_img2.Draw();
+	m_text.SetSize(100, 300);
+	m_img2.SetPos(1000, 300);
+	m_img2.SetAng(m_ang);
+	m_text.SetCenter(50, 150);
 
 	//マスコット出力
 	m_text.Draw();
@@ -78,7 +88,7 @@ void Title::Draw()
 	//中心位置設定
 	m_text.SetCenter(200, 350);
 
-	/*
+	
 	//マスコット出力
 	m_text2.Draw();
 	//座標設定
@@ -113,7 +123,7 @@ void Title::Draw()
 	//中心位置設定
 	m_text4.SetCenter(200, 350);
 
-	/*
+	
 	//マスコット出力
 	m_text5.Draw();
 	//座標設定
@@ -124,10 +134,10 @@ void Title::Draw()
 	m_text5.SetAng(m_ang);
 	//中心位置設定
 	m_text5.SetCenter(200, 350);
-	*/
+	
 
 
-	/*
+	
 	//マスコット出力
 	m_text6.Draw();
 	//座標設定
@@ -138,9 +148,9 @@ void Title::Draw()
 	m_text6.SetAng(m_ang);
 	//中心位置設定
 	m_text6.SetCenter(200, 350);
-	*/	
+	
 
-	/*
+	
 	//マスコット出力
 	m_text7.Draw();
 	//座標設定
@@ -152,6 +162,6 @@ void Title::Draw()
 	//中心位置設定
 	m_text7.SetCenter(200, 350);
 	
-*/
+
 
 }
