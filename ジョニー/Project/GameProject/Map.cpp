@@ -16,11 +16,7 @@ static int stage1data[MAP_HEIGHT][MAP_WIDTH] = {
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4},
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1},
 	{ 1,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,6,0,6,6,6,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,6,0,0,0,0,0,0,0,1,1,3,0,0,0,1,3,0,0,1,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,6,6,1,3,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,0,0,3,0,0,3,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,4,1},
-<<<<<<< HEAD
 	{ 1,4,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,6,1,3,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,3,1,1,1,1,1,1,3,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-=======
-	{ 1,4,0,0,6,6,6,6,6,6,2,0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,6,1,3,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,3,1,1,1,1,1,1,3,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
->>>>>>> b08513cef887d29a7d354915c6204c7800370ef0
 	{ 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
 
 	};
@@ -37,128 +33,31 @@ Map::Map() : Base(eType_Field)
 	for (int i = 0; i < MAP_HEIGHT; i++) {
 		for (int j = 0; j < MAP_WIDTH; j++) {
 			if (stage1data[i][j] == 0)continue;
+			int x;
+			int y;
+			x = j * MAP_TIP_SIZE;
+			y = i * MAP_TIP_SIZE;
 			int& t = stage1data[i][j];
-			if (t == 3)
-			{
-				int x;
-				int y;
-				x = j * MAP_TIP_SIZE;
-				y = i * MAP_TIP_SIZE;
-				//xとyの位置に敵を生成する
-				//i行j列のチップのデータを０に戻す
-
-				Base::Add(new trap(CVector2D(x, y), true));
-				//Base::Add(new trapbullet(CVector2D(), true));
-				t = 0;
-
-
-			}
-
-
-
-		}
-	}
-	for (int i = 0; i < MAP_HEIGHT; i++) {
-		for (int j = 0; j < MAP_WIDTH; j++) {
-			if (stage1data[i][j] == 0)continue;
-			int& t = stage1data[i][j];
-			if (t == 4)
-			{
-				int x;
-				int y;
-				x = j * MAP_TIP_SIZE;
-				y = i * MAP_TIP_SIZE;
-				//xとyの位置に敵を生成する
-				//i行j列のチップのデータを０に戻す
-
-				//Base::Add(new Goal(CVector2D(x, y), true));
-				Base::Add(new Goal(CVector2D(x, y)));
-				//Base::Add(new trapbullet(CVector2D(), true));
-				t = 0;
-
-
-			}
-
-
-
-		}
-	}
-<<<<<<< HEAD
-
-	//画像複製
-	m_img = COPY_RESOURCE("MapTip", CImage);
-	
-	
-}
-
-/*void Map::Draw()
-{
-	
-=======
-	for (int i = 0; i < MAP_HEIGHT; i++) {
-		for (int j = 0; j < MAP_WIDTH; j++) {
-			if (stage1data[i][j] == 0)continue;
-			int& t = stage1data[i][j];
-			if (t == 2)
-			{
-				int x;
-				int y;
-				x = j * MAP_TIP_SIZE;
-				y = i * MAP_TIP_SIZE;
-				//xとyの位置に敵を生成する
-				//i行j列のチップのデータを０に戻す
-
+			switch (t) {
+			case 2:
 				Base::Add(new Enemy(CVector2D(x, y), true));
-				//Base::Add(new trapbullet(CVector2D(), true));
-				t = 0;
-
-
-			}
-			//画像複製
-			m_img = COPY_RESOURCE("MapTip", CImage);
-		}
-	}
-
->>>>>>> b08513cef887d29a7d354915c6204c7800370ef0
-
-	/*float sc;
-	sc = m_scroll.x / 4;
-	//m_ing.SetRect(sc, 0, sc + 1280, 720);
-	sc = m_scroll.x;
-	//m_ing.SetRect(sc, 0, sc + 1280, 720);
-	
-	//マップチップによる表示の繰り返し
-<<<<<<< HEAD
-
-	for (int i = 0; i < MAP_HEIGHT; i++) {
-		for (int j = x1; j < x2; j++) {
-=======
-	for (int i = 0; i < MAP_HEIGHT; i++)
-	{
-		for (int j = 0; j < MAP_WIDTH; j++)
-		{
->>>>>>> b08513cef887d29a7d354915c6204c7800370ef0
-			if (stage1data[i][j] == 0)continue;
-			int &t = stage1data[i][j];
-			if (t == 6)
-			{
-				int x;
-				int y;
-				x = j * MAP_TIP_SIZE;
-				y = i * MAP_TIP_SIZE;
-				//xとyの位置に敵を生成する
-				//i行j列のチップのデータを０に戻す
-
+				break;
+			case 3:
+				Base::Add(new trap(CVector2D(x, y), true));
+				break;
+			case 4:
+				Base::Add(new Goal(CVector2D(x, y)));
+				break;
+			case 6:
 				Base::Add(new Player(CVector2D(x, y), true));
-				//Base::Add(new Player(CVector2D(x, y)));
-				//Base::Add(new trapbullet(CVector2D(), true));
-				t = 0;
-
+				break;
 
 			}
-			
+			t = 0;
 		}
 	}
+
+
 
 	//画像複製
 	m_img = COPY_RESOURCE("MapTip", CImage);
@@ -174,12 +73,7 @@ void Map::Draw()
 	if (x1 < 0) x1 = 0;
 	int	x2 = x1 + 31;
 	if (x2 > MAP_WIDTH - 1) x2 = MAP_WIDTH - 1;
-	/*float sc;
-	sc = m_scroll.x / 4;
-	//m_ing.SetRect(sc, 0, sc + 1280, 720);
-	sc = m_scroll.x;
-	//m_ing.SetRect(sc, 0, sc + 1280, 720);
-	*/
+
 	//マップチップによる表示の繰り返し
 
 	for (int i = 0; i < MAP_HEIGHT; i++) {
@@ -199,62 +93,6 @@ void Map::Draw()
 
 		}
 	}
-<<<<<<< HEAD
-		for (int i = 0; i < MAP_HEIGHT; i++) {
-			for (int j = 0; j < MAP_WIDTH; j++) {
-				if (stage1data[i][j] == 0)continue;
-				int& t = stage1data[i][j];
-				if (t == 2)
-				{
-					int x;
-					int y;
-					x = j * MAP_TIP_SIZE;
-					y = i * MAP_TIP_SIZE;
-					//xとyの位置に敵を生成する
-					//i行j列のチップのデータを０に戻す
-
-					Base::Add(new Enemy(CVector2D(x, y), true));
-					//Base::Add(new trapbullet(CVector2D(), true));
-					t = 0;
-
-
-				}
-				//画像複製
-				m_img = COPY_RESOURCE("MapTip", CImage);
-			}
-			
-		
-	
-}*/
-
-	void Map::Draw()
-	{
-		float sc;
-		sc = m_scroll.x / 4;
-		//m_ing.SetRect(sc, 0, sc + 1280, 720);
-		sc = m_scroll.x;
-		//m_ing.SetRect(sc, 0, sc + 1280, 720);
-		
-		//マップチップによる表示の繰り返し
-		for (int i = 0; i < MAP_HEIGHT; i++) 
-		{
-			for (int j = 0; j < MAP_WIDTH; j++)
-			{
-				if (stage1data[i][j] == 0)continue;
-				int t = stage1data[i][j];
-				//画像切り抜き
-				m_img.SetRect(32, 0, 32 + 32, 32);
-				//表示サイズ設定
-				m_img.SetSize(MAP_TIP_SIZE, MAP_TIP_SIZE);
-				//表示位置設定
-				m_img.SetPos(MAP_TIP_SIZE * j - m_scroll.x, MAP_TIP_SIZE * i - m_scroll.y);
-
-				//描画
-				m_img.Draw();
-			}
-		}
-=======
->>>>>>> b08513cef887d29a7d354915c6204c7800370ef0
 }
 void Map::Update()
 {
