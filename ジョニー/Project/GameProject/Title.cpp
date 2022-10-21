@@ -49,7 +49,7 @@ void Title::Update()
 		m_kill = true;
 	}
 
-	m_ang += 0.2f;
+	m_ang += 0.02f;
 	
 
 }
@@ -154,7 +154,7 @@ void Title::Draw()
 	//マスコット出力
 	m_text7.Draw();
 	//座標設定
-	m_text7.SetPos(900, 200);
+	m_text7.SetPos(900, 400);
 	//大きさ設定
 	m_text7.SetSize(400, 700);
 	//回転
