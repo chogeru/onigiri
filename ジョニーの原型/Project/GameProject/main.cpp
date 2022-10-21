@@ -131,13 +131,12 @@ void Init(void)
 
 
 
-/*
+
 	SOUND("jump")->Load("sound/BGM/jumpman.wav");
->>>>>>> 9d538bd8c7c863dcaebb43e981a1e0ba6caaa4a4
 	SOUND("field")->Load("sound/BGM/bgm_com.wav");
 	//BGM@ƒ‹[ƒvÄ¶
 	SOUND("field")->Play();
-	*/
+	
 
 
 
