@@ -32,7 +32,7 @@ Player::Player(const CVector2D& pos, bool flip) :
 	m_is_ground = true;
 	m_rad = 32;
 	m_damage_no = -1;
-	m_hp = 100;
+	m_hp = 500;
 
 }
 void Player::Update() {
