@@ -149,7 +149,7 @@ void trap::Draw()
 	m_img.SetPos(GetScreenPos(m_pos));
 	m_img.SetFlipH(m_flip);
 	m_img.Draw();
-	DrawRect();
+	
 }
 
 void trap::Collision(Base* b)
