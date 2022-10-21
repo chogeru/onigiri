@@ -79,19 +79,31 @@ Map::Map() : Base(eType_Field)
 
 		}
 	}
+	for (int i = 0; i < MAP_HEIGHT; i++) {
+		for (int j = 0; j < MAP_WIDTH; j++) {
+			if (stage1data[i][j] == 0)continue;
+			int& t = stage1data[i][j];
+			if (t == 2)
+			{
+				int x;
+				int y;
+				x = j * MAP_TIP_SIZE;
+				y = i * MAP_TIP_SIZE;
+				//xとyの位置に敵を生成する
+				//i行j列のチップのデータを０に戻す
 
-	//画像複製
-	m_img = COPY_RESOURCE("MapTip", CImage);
-	
-	
-}
+				Base::Add(new Enemy(CVector2D(x, y), true));
+				//Base::Add(new trapbullet(CVector2D(), true));
+				t = 0;
 
-void Map::Draw()
-{
-	
 
-	int x1 = 2*2;
-	int	x2 = x1 + 30;
+			}
+			//画像複製
+			m_img = COPY_RESOURCE("MapTip", CImage);
+		}
+	}
+
+
 	/*float sc;
 	sc = m_scroll.x / 4;
 	//m_ing.SetRect(sc, 0, sc + 1280, 720);
@@ -99,11 +111,12 @@ void Map::Draw()
 	//m_ing.SetRect(sc, 0, sc + 1280, 720);
 	*/
 	//マップチップによる表示の繰り返し
-
-	for (int i = 0; i < MAP_HEIGHT; i++) {
-		for (int j = x1; j < x2; j++) {
+	for (int i = 0; i < MAP_HEIGHT; i++)
+	{
+		for (int j = 0; j < MAP_WIDTH; j++)
+		{
 			if (stage1data[i][j] == 0)continue;
-			int& t = stage1data[i][j];
+			int &t = stage1data[i][j];
 			if (t == 6)
 			{
 				int x;
@@ -120,60 +133,49 @@ void Map::Draw()
 
 
 			}
+			
+		}
+	}
 
+	//画像複製
+	m_img = COPY_RESOURCE("MapTip", CImage);
+	
+	
+}
+
+void Map::Draw()
+{
+
+
+	int x1 = m_scroll.x / MAP_TIP_SIZE;
+	if (x1 < 0) x1 = 0;
+	int	x2 = x1 + 31;
+	if (x2 > MAP_WIDTH - 1) x2 = MAP_WIDTH - 1;
+	/*float sc;
+	sc = m_scroll.x / 4;
+	//m_ing.SetRect(sc, 0, sc + 1280, 720);
+	sc = m_scroll.x;
+	//m_ing.SetRect(sc, 0, sc + 1280, 720);
+	*/
+	//マップチップによる表示の繰り返し
+
+	for (int i = 0; i < MAP_HEIGHT; i++) {
+		for (int j = x1; j < x2; j++) {
+			if (stage1data[i][j] == 0)continue;
+			int& t = stage1data[i][j];
+		
+			m_img.SetRect(32, 0, 32 + 32, 32);
+			//表示サイズ設定
+			m_img.SetSize(MAP_TIP_SIZE, MAP_TIP_SIZE);
+			//表示位置設定
+			m_img.SetPos(MAP_TIP_SIZE * j - m_scroll.x, MAP_TIP_SIZE * i - m_scroll.y);
+
+			//描画
+			m_img.Draw();
 
 
 		}
 	}
-		for (int i = 0; i < MAP_HEIGHT; i++) {
-			for (int j = 0; j < MAP_WIDTH; j++) {
-				if (stage1data[i][j] == 0)continue;
-				int& t = stage1data[i][j];
-				if (t == 2)
-				{
-					int x;
-					int y;
-					x = j * MAP_TIP_SIZE;
-					y = i * MAP_TIP_SIZE;
-					//xとyの位置に敵を生成する
-					//i行j列のチップのデータを０に戻す
-
-					Base::Add(new Enemy(CVector2D(x, y), true));
-					//Base::Add(new trapbullet(CVector2D(), true));
-					t = 0;
-
-
-				}
-				//画像複製
-				m_img = COPY_RESOURCE("MapTip", CImage);
-			}
-		}
-	
-
-		/*float sc;
-		sc = m_scroll.x / 4;
-		//m_ing.SetRect(sc, 0, sc + 1280, 720);
-		sc = m_scroll.x;
-		//m_ing.SetRect(sc, 0, sc + 1280, 720);
-		*/
-		//マップチップによる表示の繰り返し
-		for (int i = 0; i < MAP_HEIGHT; i++) 
-		{
-			for (int j = 0; j < MAP_WIDTH; j++)
-			{
-				if (stage1data[i][j] == 0)continue;
-				int t = stage1data[i][j];
-				//画像切り抜き
-				m_img.SetRect(32, 0, 32 + 32, 32);
-				//表示サイズ設定
-				m_img.SetSize(MAP_TIP_SIZE, MAP_TIP_SIZE);
-				//表示位置設定
-				m_img.SetPos(MAP_TIP_SIZE * j - m_scroll.x, MAP_TIP_SIZE * i - m_scroll.y);
-
-				//描画
-				m_img.Draw();
-			}
-		}
 }
 void Map::Update()
 {
