@@ -29,7 +29,7 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 Title::~Title()
 {
 	//全てのオブジェクトを破棄
-	//Base::KillAll();
+	Base::KillAll();
 	
 
 

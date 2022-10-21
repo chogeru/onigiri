@@ -8,6 +8,7 @@
 #include "Gameover.h"
 #include"Wall.h"
 #include "Map.h"
+#include"Base/Base.h"
 Game::Game() :Base(eType_Scene)
 {
 	//Base::Add(new Field());
@@ -17,12 +18,13 @@ Game::Game() :Base(eType_Scene)
 	//Base::Add(new Enemy(CVector2D(280 + 256 * 3, 440), true));
 	//Base::Add(new trap(CVector2D(222 + 256 * 3, 440), true));
 	//Base::Add(new trap(CVector2D(300 + 256 * 3, 440), true));
-	Base::Add(new Goal(CVector2D(300, 4000)));
+	//Base::Add(new Goal(CVector2D(300, 4000)));
 	
-
+	//m_img = COPY_RESOURCE("END", CImage);
 }
 Game::~Game()
 {
+	
 	//全てのオブジェクトを破棄
 	//Base::KillAll();
 	//タイトルシーンへ
@@ -44,11 +46,17 @@ Game::~Game()
 		//タイトルシーンへ
 		Base::Add(new Title());
 	}
+
 }
 
 void Game::Update()
 {
+	//ゴールが無ければゲームシーン終了
+	if (!Base::FindObject(eType_Goal)) {
 	
+		SetKill();
+	}
+
 	
 	//プレイヤー死亡　ボタン１でゲームシーン終了
 	
