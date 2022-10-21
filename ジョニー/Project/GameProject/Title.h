@@ -6,6 +6,7 @@
 class Title : public Base {
 	//画像オブジェクト
 	CImage m_img;
+	CImage m_img2;
 	CImage m_text;
 	CImage m_text2;
 	CImage m_text3;
