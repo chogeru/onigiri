@@ -11,10 +11,10 @@ m_title_text("C:\\Windows\\Fonts\\msgothic.ttc", 64)
 	//洞窟版改良ver
 	//m_img = COPY_RESOURCE("titlegamenntype2ver2", CImage);
 	// デップ抹消版
-	//m_img = COPY_RESOURCE("titlegamenn2gou", CImage); 
+	m_img = COPY_RESOURCE("titlegamenn2gou", CImage); 
 	//タイプZ
-	m_img = COPY_RESOURCE("titletypez", CImage);
-	m_img2 = COPY_RESOURCE("titlerogo2", CImage);
+	//m_img = COPY_RESOURCE("titletypez", CImage);
+	//m_img2 = COPY_RESOURCE("titlerogo2", CImage);
 	
 	//マスコット読み込み
 	/*m_text = COPY_RESOURCE("Enemy", CImage);
@@ -58,14 +58,14 @@ void Title::Draw()
 {
 	m_img.Draw();
 	m_img.SetSize(1920, 1080);
-
+/*
 	m_img2.Draw();
 	m_text.SetSize(100, 300);
 	m_img2.SetPos(1000, 300);
 	m_img2.SetAng(m_ang);
 	m_text.SetCenter(50, 150);
 
-/*	//マスコット出力
+	//マスコット出力
 	m_text.Draw();
 	//座標設定
 	m_text.SetPos(1800,900);
